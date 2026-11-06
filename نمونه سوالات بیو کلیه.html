@@ -1,0 +1,1596 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>خلاصه High-Yield بیوشیمی کلیه — نمونه سوالات مهر ۱۴۰۵</title>
+    <link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css" rel="stylesheet" type="text/css" />
+    <style>
+        :root {
+            --primary: #1e3a8a;
+            --secondary: #3b82f6;
+            --accent: #ef4444;
+            --bg: #f8fafc;
+            --text: #1e293b;
+            --card-bg: #ffffff;
+            --border: #e2e8f0;
+            --success: #10b981;
+            --warning: #f59e0b;
+        }
+
+        body {
+            font-family: 'Vazirmatn', sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            direction: rtl;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        /* Header */
+        .header {
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: white;
+            padding: 30px 20px;
+            border-radius: 12px;
+            text-align: center;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        }
+        .header h1 { margin: 0 0 10px 0; font-size: 24px; }
+        .header h2 { margin: 0; font-size: 18px; font-weight: 400; opacity: 0.9; }
+
+        /* Sections */
+        .section {
+            background: var(--card-bg);
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 25px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+            border: 1px solid var(--border);
+        }
+        .section h2 {
+            color: var(--primary);
+            border-bottom: 2px solid var(--secondary);
+            padding-bottom: 10px;
+            margin-top: 0;
+            font-size: 20px;
+        }
+
+        /* Quiz Question */
+        .quiz-question {
+            background: #f1f5f9;
+            border-right: 4px solid var(--secondary);
+            padding: 15px;
+            margin-bottom: 15px;
+            border-radius: 0 8px 8px 0;
+        }
+        .quiz-question p { margin: 0 0 10px 0; font-weight: bold; }
+        .quiz-question ol {
+            margin: 0;
+            padding-right: 20px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 5px;
+        }
+        @media (max-width: 600px) {
+            .quiz-question ol { grid-template-columns: 1fr; }
+        }
+        .quiz-question li { margin-bottom: 5px; }
+
+        /* Details / Summary */
+        details {
+            background: #fff;
+            border: 1px solid var(--border);
+            border-radius: 6px;
+            padding: 10px;
+            margin-top: 10px;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+        details:hover { background: #f8fafc; }
+        summary {
+            font-weight: bold;
+            color: var(--secondary);
+            outline: none;
+            cursor: pointer;
+        }
+        details[open] summary { margin-bottom: 10px; border-bottom: 1px dashed var(--border); padding-bottom: 5px; }
+        details p { margin: 0; color: #065f46; background: #ecfdf5; padding: 8px; border-radius: 4px; font-size: 14px; }
+
+        /* Exam Tag */
+        .exam-tag {
+            background: var(--accent);
+            color: white;
+            font-size: 11px;
+            padding: 2px 6px;
+            border-radius: 4px;
+            margin-right: 5px;
+            vertical-align: middle;
+            display: inline-block;
+        }
+
+        /* Special Boxes */
+        .behetsino-tip, .clinical-case, .mnemonic, .exam-trap, .golden-box, .flow-diagram {
+            padding: 15px;
+            border-radius: 8px;
+            margin: 15px 0;
+            border-right: 5px solid;
+        }
+        .behetsino-tip { background: #eff6ff; border-color: #3b82f6; }
+        .behetsino-tip h4 { color: #1e3a8a; margin: 0 0 10px 0; }
+        .clinical-case { background: #fdf2f8; border-color: #ec4899; }
+        .clinical-case h4 { color: #be185d; margin: 0 0 10px 0; }
+        .mnemonic { background: #fef3c7; border-color: #f59e0b; }
+        .mnemonic h4 { color: #b45309; margin: 0 0 10px 0; }
+        .exam-trap { background: #fee2e2; border-color: #ef4444; }
+        .exam-trap h4 { color: #b91c1c; margin: 0 0 10px 0; }
+        .golden-box { background: #fefce8; border-color: #eab308; border-width: 2px; }
+        .golden-box h4 { color: #854d0e; margin: 0 0 10px 0; font-size: 18px; }
+
+        /* Flow Diagram */
+        .flow-diagram {
+            background: #f0fdf4;
+            border-color: #22c55e;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+        }
+        .flow-box {
+            background: #dcfce7;
+            border: 1px solid #86efac;
+            padding: 10px 20px;
+            border-radius: 6px;
+            text-align: center;
+            width: 80%;
+            font-weight: bold;
+            color: #166534;
+        }
+        .flow-arrow {
+            font-size: 24px;
+            color: #22c55e;
+        }
+
+        /* Tables */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 15px 0;
+            font-size: 14px;
+        }
+        th, td {
+            border: 1px solid var(--border);
+            padding: 10px;
+            text-align: center;
+        }
+        th {
+            background: var(--primary);
+            color: white;
+        }
+        tr:nth-child(even) { background: #f1f5f9; }
+
+        /* Footer */
+        .footer {
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+            color: #64748b;
+            font-size: 14px;
+            border-top: 1px solid var(--border);
+        }
+        
+        .disclaimer {
+            background: #fff3cd;
+            color: #856404;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            border-right: 5px solid #ffc107;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+
+    <div class="header">
+        <h1>بهشتینو | Beheshtino</h1>
+        <h2>خلاصه High-Yield بیوشیمی کلیه — نمونه سوالات مهر ۱۴۰۵</h2>
+        <p>بر اساس اصل پارتو (۲۰٪ محتوا → ۸۰٪ نتیجه امتحانی)</p>
+    </div>
+
+    <div class="disclaimer">
+        ⚠️ <strong>توجه مهم:</strong> پاسخ‌های ارائه‌شده در بخش «نمایش پاسخ» دقیقاً مطابق با <strong>کلید پاسخنامه</strong> انتهای جزوه (صفحات ۱۲ تا ۱۴) تایپ شده‌اند و توضیح کوتاه نیز بر اساس متن جزوه نوشته شده است. در موارد نادری که کلید جزوه با متن علمی جزوه همخوانی ندارد، عیناً کلید ذکر شده است تا با منبع امتحانی هماهنگ باشد.
+    </div>
+
+    <!-- Section 1: Renal Physiology -->
+    <div class="section">
+        <h2>🧫 بخش ۱: فیزیولوژی و عملکرد کلیه</h2>
+        
+        <div class="behetsino-tip">
+            <h4>🔮 بهشتینویار</h4>
+            <p>کلیه یک اندام چندکاره است: <strong>گلوکونئوژنز</strong> (در زمان روزه‌داری)، <strong>سنتز اوره</strong>، تولید <strong>اریتروپویتین</strong> (در پاسخ به هایپوکسی) و فعال‌سازی <strong>ویتامین D</strong> (تبدیل به فرم فعال ۱,۲۵ دی‌هیدروکسی).</p>
+        </div>
+
+        <div class="quiz-question">
+            <p><strong>۱ - کلیه در کدام مورد نقش دارد؟</strong> <span class="exam-tag">سوال امتحان</span></p>
+            <ol type="a">
+                <li>لیپولیز</li>
+                <li>گلیکوژنز</li>
+                <li>گلوکونئوژنز</li>
+                <li>ساخته شدن اوره</li>
+            </ol>
+            <details><summary>نمایش پاسخ</summary><p><strong>پاسخ:</strong> د) ساخته شدن اوره<br><strong>تشریح:</strong> طبق متن جزوه (صفحه ۳)، کلیه در دفع مواد زائد از جمله اوره و متابولیسم گلوکونئوژنز نقش دارد. کلید جزوه گزینه د را صحیح می‌داند.</p></details>
+        </div>
+
+        <div class="quiz-question">
+            <p><strong>۲ - بیماری به دلیل نارسایی مزمن کلیه دچار کم‌خونی شده است. تجویز کدام عامل می‌تواند موجب اصلاح کم‌خونی بیمار شود؟</strong></p>
+            <ol type="a">
+                <li>ویتامین B12</li>
+                <li>اریتروبوپتین</li>
+                <li>اسید فولیک</li>
+                <li>آهن</li>
+            </ol>
+            <details><summary>نمایش پاسخ</summary><p><strong>پاسخ:</strong> ج) اسید فولیک<br><strong>تشریح:</strong> طبق کلید جزوه گزینه ج صحیح است. (هرچند در متن جزوه صفحه ۳ صراحتاً به اریتروپویتین به عنوان فاکتور اصلی اصلاح کم‌خونی ناشی از نارسایی کلیه اشاره شده است).</p></details>
+        </div>
+
+        <div class="quiz-question">
+            <p><strong>۳ - کدام مورد در افزایش میزان اریتروبوپتین در خون نقش دارد؟</strong></p>
+            <ol type="a">
+                <li>پروزسترون</li>
+                <li>نمک‌های منگنز</li>
+                <li>هایپوکسی</li>
+                <li>استرادیول</li>
+            </ol>
+            <details><summary>نمایش پاسخ</summary><p><strong>پاسخ:</strong> ج) هایپوکسی<br><strong>تشریح:</strong> طبق متن جزوه (صفحه ۳)، اریتروپویتین در پاسخ به کم‌خونی، هایپوکسی و تستوسترون ترشح می‌شود.</p></details>
+        </div>
+
+        <div class="quiz-question">
+            <p><strong>۴ - کدام مورد در افزایش میزان اریتروبوپتین در خون نقشی ندارد؟</strong></p>
+            <ol type="a">
+                <li>هایپوکسی</li>
+                <li>کم‌خونی</li>
+                <li>تستوسترون</li>
+                <li>استرادیول</li>
+            </ol>
+            <details><summary>نمایش پاسخ</summary><p><strong>پاسخ:</strong> ب) کم‌خونی<br><strong>تشریح:</strong> طبق کلید جزوه گزینه ب صحیح است. (متن جزوه هایپوکسی، کم‌خونی و تستوسترون را از محرک‌های ترشح می‌داند).</p></details>
+        </div>
+
+        <div class="quiz-question">
+            <p><strong>۵ - کدام بافت در ساخته شدن - هیدروکسی‌کوله‌کلیسفرول نقش دارد؟</strong></p>
+            <ol type="a">
+                <li>پوست</li>
+                <li>روده</li>
+                <li>کبد</li>
+                <li>کلیه</li>
+            </ol>
+            <details><summary>نمایش پاسخ</summary><p><strong>پاسخ:</strong> ج) کبد<br><strong>تشریح:</strong> طبق متن جزوه (صفحه ۳)، تبدیل ۲۵-هیدروکسی‌کوله‌کلسیفرول به ۱,۲۵ دی‌هیدروکسی در کلیه رخ می‌دهد، اما هیدروکسیلاسیون اولیه (۲۵-هیدروکسی) در کبد انجام می‌شود.</p></details>
+        </div>
+
+        <div class="quiz-question">
+            <p><strong>۶ - سرعت فیلتراسیون گلومرولی (GFR) حدود چند میلی‌لیتر در دقیقه است؟</strong></p>
+            <ol type="a">
+                <li>۱۲۵ میلی‌لیتر</li>
+                <li>۱۸۰ میلی‌لیتر</li>
+                <li>۵۰۰ میلی‌لیتر</li>
+                <li>۱ میلی‌لیتر</li>
+            </ol>
+            <details><summary>نمایش پاسخ</summary><p><strong>پاسخ:</strong> الف) ۱۲۵ میلی‌لیتر<br><strong>تشریح:</strong> طبق متن جزوه (صفحه ۴)، سرعت فیلتراسیون گلومرولی (GFR) حدود ۱۲۵ میلی‌لیتر در دقیقه است.</p></details>
+        </div>
+        
+        <div class="clinical-case">
+            <h4>🩺 سناریوی بالینی</h4>
+            <p>بیمار با نارسایی مزمن کلیه (CKD) دچار کم‌خونی نورموکروم نورموسیتیک می‌شود. علت اصلی، کاهش تولید <strong>اریتروپویتین</strong> توسط کلیه است. درمان اصلی، تجویز اریتروپویتین نوترکیب است.</p>
+        </div>
+    </div>
+
+    <!-- Section 2: Acid-Base -->
+    <div class="section">
+        <h2>⚖️ بخش ۲: تعادل اسید و باز</h2>
+
+        <div class="behetsino-tip">
+            <h4>🔮 بهشتینویار</h4>
+            <p>معادله هندرسون-هاسلبالخ: <strong>pH = pKa + log ([A-]/[HA])</strong>. هرچه نسبت [A-]/[HA] به ۱ نزدیک‌تر باشد، مقاومت بافر بیشتر است. محدوده موثر بافر معمولاً pKa ± ۱ است.</p>
+        </div>
+
+        <div class="quiz-question">
+            <p><strong>۷ - خاصیت بافری پروتئین در pH فیزیولوژیک بیش‌تر به دلیل حضور کدام اسید آمینه در ساختار پروتئین است؟</strong></p>
+            <ol type="a">
+                <li>لیزین</li>
+                <li>آرزینین</li>
+                <li>هیستیدین</li>
+                <li>گلوتامات</li>
+            </ol>
+            <details><summary>نمایش پاسخ</summary><p><strong>پاسخ:</strong> د) گلوتامات<br><strong>تشریح:</strong> طبق کلید جزوه گزینه د صحیح است. (متن جزوه صفحه ۷، اسید آمینه هیستیدین را به دلیل داشتن گروه ایمیدازول، عامل اصلی خصلت بافری پروتئین معرفی می‌کند).</p></details>
+        </div>
+
+        <div class="quiz-question">
+            <p><strong>۸ - نسبت اسید به نمک در بافری ده است. اگر pKa اسید موجود در این بافر پنج باشد، pH آن چند است؟</strong></p>
+            <ol type="a">
+                <li>۴</li>
+                <li>۵</li>
+                <li>۶</li>
+                <li>۱۰</li>
+            </ol>
+            <details><summary>نمایش پاسخ</summary><p><strong>پاسخ:</strong> د) ۱۰ (طبق کلید)<br><strong>تشریح:</strong> کلید جزوه گزینه د را علامت زده است. بر اساس فرمول هندرسون-هاسلبالخ: pH = pKa + log([A-]/[HA]) = 5 + log(1/10) = 5 - 1 = 4. بنابراین پاسخ صحیح علمی ۴ است.</p></details>
+        </div>
+
+        <div class="quiz-question">
+            <p><strong>۹ - نسبت نمک به اسید در بافری ده است. اگر pKa اسید موجود در این بافر پنج باشد، pH آن چند است؟</strong></p>
+            <ol type="a">
+                <li>۴</li>
+                <li>۵</li>
+                <li>۶</li>
+                <li>۱۰</li>
+            </ol>
+            <details><summary>نمایش پاسخ</summary><p><strong>پاسخ:</strong> ب) ۵<br><strong>تشریح:</strong> طبق کلید جزوه گزینه ب صحیح است. بر اساس فرمول: pH = 5 + log(10) = 6. بنابراین پاسخ صحیح علمی ۶ است.</p></details>
+        </div>
+
+        <div class="quiz-question">
+            <p><strong>۱۰ - محلول بافر در کدام حالت دارای بیش‌ترین مقاومت است؟</strong></p>
+            <ol type="a">
+                <li>هنگامی که pH < pKa است</li>
+                <li>هنگامی که pH = pKa است</li>
+                <li>هنگامی که pH > pKa است</li>
+                <li>مقاومت محلول بافر با رابطه بین pH و pKa ارتباطی ندارد</li>
+            </ol>
+            <details><summary>نمایش پاسخ</summary><p><strong>پاسخ:</strong> ب) هنگامی که pH = pKa است<br><strong>تشریح:</strong> طبق متن جزوه (صفحه ۶)، هنگامی که pH = pKa باشد، غلظت اسید و نمک برابر است و بافر بیشترین مقاومت را دارد.</p></details>
+        </div>
+
+        <div class="quiz-question">
+            <p><strong>۱۱ - محدوده‌ای از pH که در آن یک بافر مشخص به طور موثری دارای فعالیت بافری است کدام است؟</strong></p>
+            <ol type="a">
+                <li>از pKa تا pH + pKa</li>
+                <li>از pKa - ۱ تا pKa + ۱</li>
+                <li>از pKa + ۱ تا pH - ۱</li>
+                <li>از pKa تا pH</li>
+            </ol>
+            <details><summary>نمایش پاسخ</summary><p><strong>پاسخ:</strong> ب) از pKa - ۱ تا pKa + ۱<br><strong>تشریح:</strong> طبق متن جزوه (صفحه ۷)، محدوده فعالیت موثر بافر از pKa - ۱ تا pKa + ۱ است.</p></details>
+        </div>
+
+        <div class="quiz-question">
+            <p><strong>۱۲ - در محلول بافر در چه هنگامی غلظت اسید بیش‌تر از نمک آن ([HA] > [A]) است؟</strong></p>
+            <ol type="a">
+                <li>هنگامی که pH < pKa است</li>
+                <li>هنگامی که pH = pKa است</li>
+                <li>هنگامی که pH > pKa است</li>
+                <li>ارتباطی ندارد</li>
+            </ol>
+            <details><summary>نمایش پاسخ</summary><p><strong>پاسخ:</strong> الف) هنگامی که pH < pKa است<br><strong>تشریح:</strong> طبق متن جزوه (صفحه ۶)، وقتی pH < pKa باشد، غلظت فرم پروتونه (HA) بیشتر از فرم غیرپروتونه (A-) است.</p></details>
+        </div>
+
+        <div class="quiz-question">
+            <p><strong>۱۳ - کدام مورد در تنظیم pH خون نقش بارزی ندارد؟</strong></p>
+            <ol type="a">
+                <li>بی کربنات</li>
+                <li>هموگلوبین</li>
+                <li>اسیدهای آمینه</li>
+                <li>امونیاک</li>
+            </ol>
+            <details><summary>نمایش پاسخ</summary><p><strong>پاسخ:</strong> د) امونیاک<br><strong>تشریح:</strong> طبق متن جزوه (صفحه ۷)، چهار سامانه بافری مهم خون شامل بی‌کربنات، فسفات، اسیدهای آمینه و پروتئین‌ها (هموگلوبین) است و امونیاک جزو آن‌ها نیست.</p></details>
+        </div>
+
+        <div class="quiz-question">
+            <p><strong>۱۴ - کدام مورد نقش بافری موثری در گلبول قرمز دارد؟</strong></p>
+            <ol type="a">
+                <li>هموگلوبین</li>
+                <li>بی کربنات</li>
+                <li>استات</li>
+                <li>گالیسین</li>
+            </ol>
+            <details><summary>نمایش پاسخ</summary><p><strong>پاسخ:</strong> الف) هموگلوبین<br><strong>تشریح:</strong> طبق متن جزوه (صفحه ۷)، هموگلوبین در داخل گلبول‌های قرمز نقش اساسی‌تری در بافری دارد.</p></details>
+        </div>
+
+        <div class="quiz-question">
+            <p><strong>۱۵ - کدام مورد در گلبول قرمز نقش بافری ندارد؟</strong></p>
+            <ol type="a">
+                <li>هموگلوبین</li>
+                <li>فسفات</li>
+                <li>امونیاک</li>
+                <li>هر سه مورد</li>
+            </ol>
+            <details><summary>نمایش پاسخ</summary><p><strong>پاسخ:</strong> ج) امونیاک<br><strong>تشریح:</strong> طبق متن جزوه، هموگلوبین و فسفات در گلبول قرمز نقش بافری دارند اما امونیاک جزو بافرهای اصلی خون ذکر نشده است.</p></details>
+        </div>
+
+        <div class="quiz-question">
+            <p><strong>۱۹ - در حالت جبرانی در اسیدوز تنفسی مزمن به ازای افزایش هر یک میلیمتر جیوه فشار جزئی دی اکسیدکربن مقدار بی کربنات باید چند میلی مولار افزوده شود؟</strong></p>
+            <ol type="a">
+                <li>۰/۱</li>
+                <li>۰/۲</li>
+                <li>۰/۴</li>
+                <li>۰/۸</li>
+            </ol>
+            <details><summary>نمایش پاسخ</summary><p><strong>پاسخ:</strong> ب) ۰/۲<br><strong>تشریح:</strong> طبق کلید جزوه گزینه ب صحیح است. (متن جزوه صفحه ۱۰ برای اسیدوز تنفسی مزمن مقدار ۰/۴ میلی‌مولار را ذکر کرده است).</p></details>
+        </div>
+
+        <div class="quiz-question">
+            <p><strong>۲۰ - کدام مورد در ایجاد الکالوز تنفسی نقش دارد؟</strong></p>
+            <ol type="a">
+                <li>مصرف بیش از حد سالیسیالت ها</li>
+                <li>آمفیزم</li>
+                <li>خیز (ادم) ریوی</li>
+                <li>مصرف بیش از حد داروهای آرام بخش</li>
+            </ol>
+            <details><summary>نمایش پاسخ</summary><p><strong>پاسخ:</strong> الف) مصرف بیش از حد سالیسیالت ها<br><strong>تشریح:</strong> طبق متن جزوه (صفحه ۱۲، جدول ۴)، مصرف بیش از حد سالیسیلات‌ها از علل الکالوز تنفسی است.</p></details>
+        </div>
+
+        <div class="quiz-question">
+            <p><strong>۲۱ - در حالت جبرانی در الکالوز تنفسی حاد به ازای افزایش هر یک میلیمتر جیوه فشار جزئی دی اکسیدکربن مقدار بی کربنات باید چند میلی مولار کاسته شود؟</strong></p>
+            <ol type="a">
+                <li>۰/۱</li>
+                <li>۰/۲</li>
+                <li>۰/۴</li>
+                <li>۰/۸</li>
+            </ol>
+            <details><summary>نمایش پاسخ</summary><p><strong>پاسخ:</strong> ب) ۰/۲<br><strong>تشریح:</strong> طبق متن جزوه (صفحه ۱۱، جدول ۷)، در الکالوز تنفسی حاد به ازای کاهش هر میلی‌متر جیوه pCO2، مقدار ۰/۲ میلی‌مولار بی‌کربنات کاسته می‌شود.</p></details>
+        </div>
+
+        <div class="quiz-question">
+            <p><strong>۲۲ - در اسیدوز متابولیک جبران نشده کدام مورد درست است؟</strong></p>
+            <ol type="a">
+                <li>کاهش غلظت H⁺ در خون</li>
+                <li>افزایش مقدار دی اکسیدکربن در خون</li>
+                <li>کاهش غلظت بی کربنات در خون</li>
+                <li>کاهش ثابت یونش اسیدی (pKa) بافر بی کربنات در خون</li>
+            </ol>
+            <details><summary>نمایش پاسخ</summary><p><strong>پاسخ:</strong> ج) کاهش غلظت بی کربنات در خون<br><strong>تشریح:</strong> طبق متن جزوه (صفحه ۸)، اسیدوز متابولیک به دلیل کاهش اولیه غلظت بی‌کربنات خون ایجاد می‌شود.</p></details>
+        </div>
+
+        <div class="quiz-question">
+            <p><strong>۲۳ - در اسیدوز متابولیک کدام مورد در خصوص نسبت مقدار بی کربنات به دی اکسیدکربن در خون درست است؟</strong></p>
+            <ol type="a">
+                <li>کم تر از ۲۰ است</li>
+                <li>مساوی ۲۰ است</li>
+                <li>تغییری در آن ایجاد نمی شود</li>
+                <li>بیش تر از ۲۰ است</li>
+            </ol>
+            <details><summary>نمایش پاسخ</summary><p><strong>پاسخ:</strong> الف) کم تر از ۲۰ است<br><strong>تشریح:</strong> طبق متن جزوه (صفحه ۸)، وقتی نسبت [HCO3-] به [CO2] کمتر از ۲۰ شود، pH کاهش یافته و اسیدوز رخ می‌دهد.</p></details>
+        </div>
+
+        <div class="quiz-question">
+            <p><strong>۲۴ - کدام مورد در ایجاد اسیدوز متابولیک نقش دارد؟</strong></p>
+            <ol type="a">
+                <li>استفراغ</li>
+                <li>هایپوکالمی</li>
+                <li>هایپر آلدسترونیس</li>
+                <li>مصرف بیش از حد سالیسیالت ها</li>
+            </ol>
+            <details><summary>نمایش پاسخ</summary><p><strong>پاسخ:</strong> د) مصرف بیش از حد سالیسیالت ها<br><strong>تشریح:</strong> طبق متن جزوه (صفحه ۱۴، جدول ۵)، مصرف سالیسیلات‌ها (آسپرین) از علل اسیدوز متابولیک است.</p></details>
+        </div>
+
+        <div class="quiz-question">
+            <p><strong>۲۵ - مصرف متانول چه اختلالی را ایجاد می کند؟</strong></p>
+            <ol type="a">
+                <li>اسیدوز تنفسی</li>
+                <li>اسیدوز متابولیک</li>
+                <li>الکالوز تنفسی</li>
+                <li>الکالوز متابولیک</li>
+            </ol>
+            <details><summary>نمایش پاسخ</summary><p><strong>پاسخ:</strong> ب) اسیدوز متابولیک<br><strong>تشریح:</strong> طبق متن جزوه (صفحه ۱۴، جدول ۵)، متانول با ایجاد اسید فرمیک باعث اسیدوز متابولیک می‌شود.</p></details>
+        </div>
+
+        <div class="quiz-question">
+            <p><strong>۲۶ - برای محاسبه شکاف آنیونی از کدام رابطه می‌توان استفاده کرد؟</strong></p>
+            <ol type="a">
+                <li>[Na+] + [HCO3-] – [Cl-]</li>
+                <li>[HCO3-] + [Cl-] – [Na+]</li>
+                <li>[Na+] – [Cl-] – [HCO3-]</li>
+                <li>[Na+] + [Cl-] – [HCO3-]</li>
+            </ol>
+            <details><summary>نمایش پاسخ</summary><p><strong>پاسخ:</strong> ج) [Na+] – [Cl-] – [HCO3-]<br><strong>تشریح:</strong> طبق متن جزوه (صفحه ۱۳)، فرمول شکاف آنیونی به صورت [Na+] - [Cl-] - [HCO3-] محاسبه می‌شود.</p></details>
+        </div>
+
+        <div class="quiz-question">
+            <p><strong>۲۷ - در کدام مورد اسیدوز متابولیک بدون افزایش شکاف آنیونی مشاهده می‌شود؟</strong></p>
+            <ol type="a">
+                <li>دیابت قندی</li>
+                <li>مسمومیت با اتیلن‌گلیکول</li>
+                <li>اسیدوز توبولی کلیه</li>
+                <li>اسیدوز اسید الکتیک</li>
+            </ol>
+            <details><summary>نمایش پاسخ</summary><p><strong>پاسخ:</strong> ج) اسیدوز توبولی کلیه<br><strong>تشریح:</strong> طبق متن جزوه (صفحه ۱۵)، در اسهال شدید و اسیدوز توبولی کلیه (RTA)، اسیدوز متابولیک بدون افزایش شکاف آنیونی (هایپرکلرمی) مشاهده می‌شود.</p></details>
+        </div>
+
+        <div class="quiz-question">
+            <p><strong>۲۸ - در کدام مورد اسیدوز متابولیک هایپرکلرمی مشاهده می‌شود؟</strong></p>
+            <ol type="a">
+                <li>دیابت قندی</li>
+                <li>اسهال</li>
+                <li>مسمومیت با سالیسیالت</li>
+                <li>اسیدوز اسید الکتیک</li>
+            </ol>
+            <details><summary>نمایش پاسخ</summary><p><strong>پاسخ:</strong> ب) اسهال<br><strong>تشریح:</strong> طبق متن جزوه (صفحه ۱۵)، دفع ترشحات گوارشی (اسهال شدید) باعث اسیدوز متابولیک بدون افزایش شکاف آنیونی (هایپرکلرمی) می‌شود.</p></details>
+        </div>
+
+        <div class="quiz-question">
+            <p><strong>۲۹ - هنگامی که مقدار کاتیون سدیم ۱۴۰ میلی‌موالر، آنیون کلرید ۱۰۱ میلی‌موالر و بی‌کربنات ۲۴ میلی‌موالر باشد، مقدار شکاف آنیونی چقدر است؟</strong></p>
+            <ol type="a">
+                <li>۱۵</li>
+                <li>۳۹</li>
+                <li>۶۳</li>
+                <li>۱۰</li>
+            </ol>
+            <details><summary>نمایش پاسخ</summary><p><strong>پاسخ:</strong> الف) ۱۵<br><strong>تشریح:</strong> محاسبه: AG = Na - (Cl + HCO3) = 140 - (101 + 24) = 15.</p></details>
+        </div>
+
+        <div class="quiz-question">
+            <p><strong>۳۰ - در بررسی شکاف آنیونی (AG) توجه به مقدار کدام مورد در خون مهم است؟</strong></p>
+            <ol type="a">
+                <li>هموگلوبین</li>
+                <li>گلوکز</li>
+                <li>آلبومین</li>
+                <li>کلسترول</li>
+            </ol>
+            <details><summary>نمایش پاسخ</summary><p><strong>پاسخ:</strong> ج) آلبومین<br><strong>تشریح:</strong> طبق متن جزوه (صفحه ۱۳)، مقدار شکاف آنیونی به هنگام کاهش آلبومین باید تصحیح شود، بنابراین آلبومین بسیار مهم است.</p></details>
+        </div>
+
+        <div class="quiz-question">
+            <p><strong>۳۱ - دلتا چک یا نسبت دلتا چگونه محاسبه می‌شود؟</strong></p>
+            <ol type="a">
+                <li>(AG - 12) / (24 - HCO3-)</li>
+                <li>(24 - HCO3-) / (AG - 12)</li>
+                <li>(AG + 12) / (24 + HCO3-)</li>
+                <li>(HCO3- - 24) / (AG - 12)</li>
+            </ol>
+            <details><summary>نمایش پاسخ</summary><p><strong>پاسخ:</strong> ب) (24 - HCO3-) / (AG - 12)<br><strong>تشریح:</strong> طبق متن جزوه (صفحه ۱۵)، نسبت دلتا به صورت ΔAG / ΔHCO3- تعریف می‌شود که در آن ΔAG = AG - 12 و ΔHCO3- = 24 - HCO3- است.</p></details>
+        </div>
+
+        <div class="exam-trap">
+            <h4>⚠️ تله امتحانی</h4>
+            <p><strong>سوال:</strong> در اسیدوز متابولیک با AG بالا، اگر دلتا چک کمتر از ۱ باشد، چه اختلالی همراه وجود دارد؟<br>
+            <strong>پاسخ:</strong> اسیدوز متابولیک با AG بالا همراه با اسیدوز متابولیک با AG طبیعی (هایپرکلرمیک).</p>
+        </div>
+
+        <div class="quiz-question">
+            <p><strong>۳۲ - با توجه به نتایج آزمایشگاهی داده شده (pH=7.6, HCO3=16, pCO2=20)، چه نوع اختلال اسید و بازی وجود دارد؟</strong></p>
+            <ol type="a">
+                <li>اسیدوز تنفسی</li>
+                <li>الکالوز تنفسی</li>
+                <li>اسیدوز متابولیک</li>
+                <li>الکالوز متابولیک</li>
+            </ol>
+            <details><summary>نمایش پاسخ</summary><p><strong>پاسخ:</strong> د) الکالوز متابولیک<br><strong>تشریح:</strong> طبق کلید جزوه گزینه د صحیح است. (pH بالاست و بی‌کربنات پایین که نشان‌دهنده اختلال مرکب است).</p></details>
+        </div>
+
+        <div class="quiz-question">
+            <p><strong>۳۳ - با توجه به نتایج (pH=7.5, HCO3=44, pCO2=48)، چه نوع اختلالی وجود دارد؟</strong></p>
+            <ol type="a">
+                <li>اسیدوز تنفسی</li>
+                <li>الکالوز تنفسی</li>
+                <li>اسیدوز متابولیک</li>
+                <li>الکالوز متابولیک</li>
+            </ol>
+            <details><summary>نمایش پاسخ</summary><p><strong>پاسخ:</strong> الف) اسیدوز تنفسی<br><strong>تشریح:</strong> طبق کلید جزوه گزینه الف صحیح است. (از نظر علمی pH بالا و بی‌کربنات بالا نشان‌دهنده الکالوز متابولیک است).</p></details>
+        </div>
+
+        <div class="quiz-question">
+            <p><strong>۳۴ - با توجه به نتایج (pH=7.2, HCO3=28, pCO2=50)، چه نوع اختلالی وجود دارد؟</strong></p>
+            <ol type="a">
+                <li>اسیدوز تنفسی</li>
+                <li>الکالوز تنفسی</li>
+                <li>اسیدوز متابولیک</li>
+                <li>الکالوز متابولیک</li>
+            </ol>
+            <details><summary>نمایش پاسخ</summary><p><strong>پاسخ:</strong> ج) اسیدوز متابولیک<br><strong>تشریح:</strong> طبق کلید جزوه گزینه ج صحیح است. (از نظر علمی pH پایین و pCO2 بالا نشان‌دهنده اسیدوز تنفسی است).</p></details>
+        </div>
+
+        <div class="quiz-question">
+            <p><strong>۳۵ - با توجه به نتایج (pH=7.32, HCO3=12, pCO2=21)، چه نوع اختلالی وجود دارد؟</strong></p>
+            <ol type="a">
+                <li>اسیدوز تنفسی</li>
+                <li>الکالوز تنفسی</li>
+                <li>اسیدوز متابولیک</li>
+                <li>الکالوز متابولیک</li>
+            </ol>
+            <details><summary>نمایش پاسخ</summary><p><strong>پاسخ:</strong> ب) الکالوز تنفسی<br><strong>تشریح:</strong> طبق کلید جزوه گزینه ب صحیح است. (از نظر علمی pH پایین و بی‌کربنات پایین نشان‌دهنده اسیدوز متابولیک است).</p></details>
+        </div>
+
+        <div class="quiz-question">
+            <p><strong>۳۶ - با توجه به نتایج (pH=7.6, HCO3=16, pCO2=20)، چه نوع اختلالی وجود دارد؟</strong></p>
+            <ol type="a">
+                <li>اسیدوز تنفسی همراه با الکالوز متابولیک</li>
+                <li>اسیدوز متابولیک همراه با الکالوز تنفسی</li>
+                <li>اسیدوز متابولیک همراه با الکالوز متابولیک</li>
+                <li>اسیدوز تنفسی همراه با الکالوز تنفسی</li>
+            </ol>
+            <details><summary>نمایش پاسخ</summary><p><strong>پاسخ:</strong> د) اسیدوز تنفسی همراه با الکالوز تنفسی<br><strong>تشریح:</strong> طبق کلید جزوه گزینه د صحیح است.</p></details>
+        </div>
+
+        <div class="quiz-question">
+            <p><strong>۳۷ - با توجه به نتایج (pH=7.32, HCO3=12, pCO2=21)، چه نوع اختلالی وجود دارد؟</strong></p>
+            <ol type="a">
+                <li>اسیدوز تنفسی همراه با الکالوز متابولیک</li>
+                <li>اسیدوز متابولیک همراه با الکالوز تنفسی</li>
+                <li>اسیدوز متابولیک همراه با الکالوز متابولیک</li>
+                <li>اسیدوز تنفسی همراه با الکالوز تنفسی</li>
+            </ol>
+            <details><summary>نمایش پاسخ</summary><p><strong>پاسخ:</strong> ب) اسیدوز متابولیک همراه با الکالوز تنفسی<br><strong>تشریح:</strong> طبق کلید جزوه گزینه ب صحیح است.</p></details>
+        </div>
+
+        <div class="quiz-question">
+            <p><strong>۳۸ - با توجه به نتایج (pH=7.6, HCO3=16, pCO2=20)، چه نوع اختلالی وجود دارد؟</strong></p>
+            <ol type="a">
+                <li>اسیدوز تنفسی</li>
+                <li>الکالوز تنفسی</li>
+                <li>اسیدوز متابولیک</li>
+                <li>الکالوز متابولیک</li>
+            </ol>
+            <details><summary>نمایش پاسخ</summary><p><strong>پاسخ:</strong> الف) اسیدوز تنفسی<br><strong>تشریح:</strong> طبق کلید جزوه گزینه الف صحیح است.</p></details>
+        </div>
+
+        <div class="quiz-question">
+            <p><strong>۳۹ - با توجه به نتایج (pH=7.5, HCO3=44, pCO2=48)، چه نوع اختلالی وجود دارد؟</strong></p>
+            <ol type="a">
+                <li>اسیدوز تنفسی</li>
+                <li>الکالوز تنفسی</li>
+                <li>اسیدوز متابولیک</li>
+                <li>الکالوز متابولیک</li>
+            </ol>
+            <details><summary>نمایش پاسخ</summary><p><strong>پاسخ:</strong> الف) اسیدوز تنفسی<br><strong>تشریح:</strong> طبق کلید جزوه گزینه الف صحیح است.</p></details>
+        </div>
+
+        <div class="quiz-question">
+            <p><strong>۴۰ - با توجه به نتایج (pH=7.2, HCO3=28, pCO2=50)، چه نوع اختلالی وجود دارد؟</strong></p>
+            <ol type="a">
+                <li>اسیدوز تنفسی</li>
+                <li>الکالوز تنفسی</li>
+                <li>اسیدوز متابولیک</li>
+                <li>الکالوز متابولیک</li>
+            </ol>
+            <details><summary>نمایش پاسخ</summary><p><strong>پاسخ:</strong> د) الکالوز متابولیک<br><strong>تشریح:</strong> طبق کلید جزوه گزینه د صحیح است.</p></details>
+        </div>
+
+        <div class="golden-box">
+            <h4>🏆 باکس طلایی — بیشترین احتمال طرح سوال (اسید و باز)</h4>
+            <ul>
+                <li><span class="exam-tag">سوال امتحان</span> فرمول شکاف آنیونی: <strong>AG = Na⁺ - (Cl⁻ + HCO3⁻)</strong></li>
+                <li><span class="exam-tag">سوال امتحان</span> در اسیدوز متابولیک جبران‌نشده، <strong>بی‌کربنات</strong> کاهش می‌یابد.</li>
+                <li><span class="exam-tag">سوال امتحان</span> مصرف متانول و سالیسیلات باعث <strong>اسیدوز متابولیک</strong> می‌شود.</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Section 3: Electrolytes & Water -->
+    <div class="section">
+        <h2>💧 بخش ۳: آب و الکترولیت‌ها</h2>
+
+        <div class="mnemonic">
+            <h4>🧠 یادیار</h4>
+            <p>کاتیون اصلی <strong>داخل</strong> سلول: <strong>پتاسیم (K⁺)</strong> | کاتیون اصلی <strong>خارج</strong> سلول: <strong>سدیم (Na⁺)</strong></p>
+        </div>
+
+        <div class="quiz-question">
+            <p><strong>۴۲ - چند درصد آب بدن در داخل سلول‌ها وجود دارد؟</strong></p>
+            <ol type="a">
+                <li>۳۳</li>
+                <li>۵۰</li>
+                <li>۶۶</li>
+                <li>۷۵</li>
+            </ol>
+            <details><summary>نمایش پاسخ</summary><p><strong>پاسخ:</strong> الف) ۳۳<br><strong>تشریح:</strong> طبق کلید جزوه گزینه الف صحیح است. (متن جزوه صفحه ۲۶، مایع داخل سلولی را حدود ۴۰ درصد وزن بدن ذکر کرده است).</p></details>
+        </div>
+
+        <div class="quiz-question">
+            <p><strong>۴۳ - کدام مورد در مورد مقدار آب متابولیسمی تولید شده درست است؟</strong></p>
+            <ol type="a">
+                <li>برای چربی‌ها کم‌تر از قندها است</li>
+                <li>برای پروتئین‌ها بیش‌تر از قندها است</li>
+                <li>برای چربی‌ها کم‌تر از پروتئین‌ها است</li>
+                <li>برای پروتئین‌ها کم‌تر از چربی‌ها است</li>
+            </ol>
+            <details><summary>نمایش پاسخ</summary><p><strong>پاسخ:</strong> د) برای پروتئین‌ها کم‌تر از چربی‌ها است<br><strong>تشریح:</strong> طبق متن جزوه (صفحه ۲۹)، آب متابولیسمی حاصل از چربی‌ها بیشتر از قندها و پروتئین‌هاست و پروتئین‌ها کمترین آب متابولیسمی را تولید می‌کنند.</p></details>
+        </div>
+
+        <div class="quiz-question">
+            <p><strong>۴۴ - میزان دفع آب توسط دستگاه تنفسی در کدام مورد افزایش می‌یابد؟</strong></p>
+            <ol type="a">
+                <li>هوای سرد</li>
+                <li>هوای گرم</li>
+                <li>کاهش فعالیت دستگاه تنفسی</li>
+                <li>الکالوز متابولیک</li>
+            </ol>
+            <details><summary>نمایش پاسخ</summary><p><strong>پاسخ:</strong> الف) هوای سرد<br><strong>تشریح:</strong> طبق متن جزوه (صفحه ۲۸)، دفع آب توسط دستگاه تنفسی در هوای سرد به دلیل کاهش فشار بخار آب در هوای محیط افزایش می‌یابد.</p></details>
+        </div>
+
+        <div class="quiz-question">
+            <p><strong>۴۵ - اسموالریته تقریبی پلاسما با سدیم ۱۳۵، پتاسیم ۳/۵، گلوکز ۹۰ و BUN ۱۴ چقدر است؟</strong></p>
+            <ol type="a">
+                <li>۲۴۲/۵</li>
+                <li>۲۸۷</li>
+                <li>۱۳۸/۵</li>
+                <li>۲۷۷</li>
+            </ol>
+            <details><summary>نمایش پاسخ</summary><p><strong>پاسخ:</strong> د) ۲۷۷<br><strong>تشریح:</strong> طبق کلید جزوه گزینه د صحیح است. (محاسبه: 2*(Na+K) + Glucose/18 + BUN/2.8 = 2*(135+3.5) + 90/18 + 14/2.8 = 277 + 5 + 5 = 287)</p></details>
+        </div>
+
+        <div class="quiz-question">
+            <p><strong>۴۶ - کدام مورد در بدن از لحاظ اسمزی فعال نیست؟</strong></p>
+            <ol type="a">
+                <li>اوره</li>
+                <li>گلوکز</li>
+                <li>پروتئین</li>
+                <li>کاتیون سدیم</li>
+            </ol>
+            <details><summary>نمایش پاسخ</summary><p><strong>پاسخ:</strong> د) کاتیون سدیم<br><strong>تشریح:</strong> طبق کلید جزوه گزینه د صحیح است. (در متن جزوه صفحه ۳۳، اوره و اتانول به عنوان اسمول‌های غیرموثر شناخته شده‌اند).</p></details>
+        </div>
+
+        <div class="quiz-question">
+            <p><strong>۴۷ - کدام مورد منجر به افزایش ترشح ADH می‌شود؟</strong></p>
+            <ol type="a">
+                <li>اتانول</li>
+                <li>افزایش اسمواللیته پالسما</li>
+                <li>افزایش حجم خون</li>
+                <li>سرما</li>
+            </ol>
+            <details><summary>نمایش پاسخ</summary><p><strong>پاسخ:</strong> ب) افزایش اسمواللیته پالسما<br><strong>تشریح:</strong> طبق متن جزوه (صفحه ۳۴)، افزایش اسمواللیته پلاسما (حداقل ۲ درصد) موجب افزایش ترشح ADH می‌شود.</p></details>
+        </div>
+
+        <div class="quiz-question">
+            <p><strong>۴۸ - کدام مورد باعث کاهش آب بدن می‌شود؟</strong></p>
+            <ol type="a">
+                <li>سندروم کان</li>
+                <li>کمبود ADH</li>
+                <li>نارسایی احتقانی قلب</li>
+                <li>سندروم کوشینگ</li>
+            </ol>
+            <details><summary>نمایش پاسخ</summary><p><strong>پاسخ:</strong> ج) نارسایی احتقانی قلب<br><strong>تشریح:</strong> طبق متن جزوه (صفحه ۳۶)، در نارسایی احتقانی قلب، کاهش انتقال آب به کلیه رخ می‌دهد که از علل کاهش آب بدن (هایپوناترمی هایپوولمیک) است.</p></details>
+        </div>
+
+        <div class="quiz-question">
+            <p><strong>۴۹ - افزایش آب سبب کدام مورد می‌شود؟</strong></p>
+            <ol type="a">
+                <li>گیجی</li>
+                <li>تنگی نفس</li>
+                <li>افت فشار خون</li>
+                <li>ضعیف شدن نبض</li>
+            </ol>
+            <details><summary>نمایش پاسخ</summary><p><strong>پاسخ:</strong> الف) گیجی<br><strong>تشریح:</strong> طبق متن جزوه (صفحه ۳۶)، افزایش آب بدن می‌تواند باعث گیجی و کاهش سطح هوشیاری شود.</p></details>
+        </div>
+
+        <div class="quiz-question">
+            <p><strong>۵۰ - تغییر حجم و اسمواللیته ICF به هنگام دفع محلول هایپوتونیک از ECF چگونه است؟</strong></p>
+            <ol type="a">
+                <li>کاهش حجم - افزایش اسمواللیته</li>
+                <li>افزایش حجم - کاهش اسمواللیته</li>
+                <li>کاهش حجم - کاهش اسمواللیته</li>
+                <li>افزایش حجم - افزایش اسمواللیته</li>
+            </ol>
+            <details><summary>نمایش پاسخ</summary><p><strong>پاسخ:</strong> الف) کاهش حجم - افزایش اسمواللیته<br><strong>تشریح:</strong> طبق متن جزوه (صفحه ۳۳، جدول ۳)، دفع محلول هیپوتونیک باعث کاهش حجم و افزایش اسمواللیته در ECF و ICF می‌شود.</p></details>
+        </div>
+
+        <div class="quiz-question">
+            <p><strong>۵۱ - تغییر حجم و اسمواللیته ICF به هنگام افزودن محلول هایپرتونیک به ECF چگونه است؟</strong></p>
+            <ol type="a">
+                <li>کاهش حجم - افزایش اسمواللیته</li>
+                <li>افزایش حجم - کاهش اسمواللیته</li>
+                <li>کاهش حجم - کاهش اسمواللیته</li>
+                <li>افزایش حجم - افزایش اسمواللیته</li>
+            </ol>
+            <details><summary>نمایش پاسخ</summary><p><strong>پاسخ:</strong> د) افزایش حجم - افزایش اسمواللیته<br><strong>تشریح:</strong> طبق متن جزوه (صفحه ۳۳، جدول ۳)، افزودن محلول هیپرتونیک باعث افزایش حجم و افزایش اسمواللیته در هر دو بخش ECF و ICF می‌شود.</p></details>
+        </div>
+
+        <div class="quiz-question">
+            <p><strong>۵۲ - کدام کاتیون در خارج سلول، بیش‌ترین غلظت را دارد؟</strong></p>
+            <ol type="a">
+                <li>K+</li>
+                <li>Mg2+</li>
+                <li>Na+</li>
+                <li>Ca2+</li>
+            </ol>
+            <details><summary>نمایش پاسخ</summary><p><strong>پاسخ:</strong> ج) Na+<br><strong>تشریح:</strong> طبق متن جزوه (صفحه ۳۷)، کاتیون سدیم مهم‌ترین کاتیون خارج سلولی است.</p></details>
+        </div>
+
+        <div class="quiz-question">
+            <p><strong>۵۳ - کدام کاتیون در داخل سلول، بیش‌ترین غلظت را دارد؟</strong></p>
+            <ol type="a">
+                <li>Na+</li>
+                <li>Mg2+</li>
+                <li>Ca2+</li>
+                <li>K+</li>
+            </ol>
+            <details><summary>نمایش پاسخ</summary><p><strong>پاسخ:</strong> د) K+<br><strong>تشریح:</strong> طبق متن جزوه (صفحه ۳۷)، کاتیون پتاسیم مهم‌ترین کاتیون داخل سلولی است.</p></details>
+        </div>
+
+        <div class="quiz-question">
+            <p><strong>۵۴ - کدام مورد باعث هایپوناترمی رقتی (برآیی هایپواسموتیک) در سرم می‌شود؟</strong></p>
+            <ol type="a">
+                <li>تهوع شدید</li>
+                <li>کاهش آلدوسترون</li>
+                <li>مصرف اسپیرونوالکتون</li>
+                <li>نارسایی حاد کلیه</li>
+            </ol>
+            <details><summary>نمایش پاسخ</summary><p><strong>پاسخ:</strong> ج) مصرف اسپیرونوالکتون<br><strong>تشریح:</strong> طبق متن جزوه (صفحه ۴۲، جدول ۲)، مصرف اسپیرونوالکتون (آنتاگونیست آلدوسترون) از علل هایپوناترمی هایپوتونیک هایپوولمیک است.</p></details>
+        </div>
+
+        <div class="quiz-question">
+            <p><strong>۵۵ - کدام مورد باعث هایپوناترمی در سرم می‌شود؟</strong></p>
+            <ol type="a">
+                <li>برخی از جراحات مغزی</li>
+                <li>سندروم کان</li>
+                <li>کمبود ADH</li>
+                <li>نارسایی احتقانی قلب</li>
+            </ol>
+            <details><summary>نمایش پاسخ</summary><p><strong>پاسخ:</strong> الف) برخی از جراحات مغزی<br><strong>تشریح:</strong> طبق متن جزوه (صفحه ۴۳)، در برخی از جراحات مغزی، ترشح نابجا یا نامناسب ADH (SIADH) رخ می‌دهد که باعث هایپوناترمی می‌شود.</p></details>
+        </div>
+
+        <div class="quiz-question">
+            <p><strong>۵۶ - کدام مورد باعث هایپوناترمی رقتی (برآیی هایپواسموتیک) در سرم می‌شود؟</strong></p>
+            <ol type="a">
+                <li>مصرف دیورتیک تیازیدی</li>
+                <li>سندروم نفروتیک</li>
+                <li>مصرف اسپیرونوالکتون</li>
+                <li>تهوع شدید</li>
+            </ol>
+            <details><summary>نمایش پاسخ</summary><p><strong>پاسخ:</strong> ب) سندروم نفروتیک<br><strong>تشریح:</strong> طبق متن جزوه (صفحه ۴۱، جدول ۲)، سندروم نفروتیک با ایجاد هیپوپروتئینمی و کاهش انتقال آب به کلیه، باعث هایپوناترمی هایپوتونیک هایپروولمیک می‌شود.</p></details>
+        </div>
+
+        <div class="quiz-question">
+            <p><strong>۵۷ - در سندروم کوشینگ وضعیت کاتیون سدیم و پتاسیم در سرم چگونه است؟</strong></p>
+            <ol type="a">
+                <li>هایپرناترمی و هایپوکالمی</li>
+                <li>هایپرناترمی و هایپرکالمی</li>
+                <li>هایپوناترمی و هایپوکالمی</li>
+                <li>هایپوناترمی و هایپرکالمی</li>
+            </ol>
+            <details><summary>نمایش پاسخ</summary><p><strong>پاسخ:</strong> الف) هایپرناترمی و هایپوکالمی<br><strong>تشریح:</strong> طبق متن جزوه (صفحه ۴۴، جدول ۳)، سندروم کوشینگ (افزایش کورتیزول) باعث هایپرناترمی می‌شود و به دلیل اثر مینرالوکورتیکوئیدی، هایپوکالمی نیز رخ می‌دهد.</p></details>
+        </div>
+
+        <div class="quiz-question">
+            <p><strong>۵۸ - در کدام مورد اختلال در توازن داخلی سبب هایپوکالمی در سرم می‌شود؟</strong></p>
+            <ol type="a">
+                <li>همولیز داخل عروقی</li>
+                <li>الکالوز</li>
+                <li>فعالیت عضلانی شدید</li>
+                <li>دیابت قندی</li>
+            </ol>
+            <details><summary>نمایش پاسخ</summary><p><strong>پاسخ:</strong> الف) همولیز داخل عروقی<br><strong>تشریح:</strong> طبق کلید جزوه گزینه الف صحیح است. (متن جزوه صفحه ۴۹، همولیز داخل عروقی را از علل هایپرکالمی می‌داند).</p></details>
+        </div>
+
+        <div class="quiz-question">
+            <p><strong>۵۹ - کدام مورد باعث هایپرکالمی در سرم می‌شود؟</strong></p>
+            <ol type="a">
+                <li>الکالوز</li>
+                <li>اسهال</li>
+                <li>مصرف فوروسماید</li>
+                <li>همولیز داخل عروقی</li>
+            </ol>
+            <details><summary>نمایش پاسخ</summary><p><strong>پاسخ:</strong> د) همولیز داخل عروقی<br><strong>تشریح:</strong> طبق متن جزوه (صفحه ۵۰)، همولیز داخل عروقی باعث خروج پتاسیم از سلول‌ها و هایپرکالمی می‌شود.</p></details>
+        </div>
+
+        <div class="flow-diagram">
+            <h4>🌊 فلوچارت تغییرات حجم و اسموالریته</h4>
+            <div class="flow-box">افزودن محلول هایپرتونیک به ECF</div>
+            <div class="flow-arrow">↓</div>
+            <div class="flow-box">افزایش اسمولاریته ECF</div>
+            <div class="flow-arrow">↓</div>
+            <div class="flow-box">خروج آب از ICF به ECF</div>
+            <div class="flow-arrow">↓</div>
+            <div class="flow-box" style="background:#fecaca; border-color:#ef4444; color:#991b1b;">کاهش حجم ICF - افزایش اسمولاریته ICF</div>
+        </div>
+    </div>
+
+    <!-- Section 4: Trace Elements -->
+    <div class="section">
+        <h2>🧪 بخش ۴: عناصر کمیاب و ویتامین‌ها</h2>
+
+        <table class="summary-table">
+            <thead>
+                <tr>
+                    <th>عنصر / بیماری</th>
+                    <th>نکته کلیدی</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>مس (Cu)</td><td>بیماری منک (Menkes) - اختلال در جذب مس</td></tr>
+                <tr><td>روی (Zn)</td><td>بیماری کشان (Keshan) - کمبود روی و سلنیوم</td></tr>
+                <tr><td>سلنیوم (Se)</td><td>کوفاکتور گلوتاتیون پراکسیداز</td></tr>
+                <tr><td>منگنز (Mn)</td><td>کوفاکتور سوپراکسید دیسموتاز میتوکندریایی</td></tr>
+                <tr><td>آلومینیم (Al)</td><td>مسمومیت در نارسایی کلیه، ایجاد آلزایمر</td></tr>
+            </tbody>
+        </table>
+
+        <div class="quiz-question">
+            <p><strong>۶۰ - در کدام مورد ممکن است هایپوناترمی ایزوتونیک یا هایپوناترمی کاذب مشاهده شود؟</strong></p>
+            <ol type="a">
+                <li>هایپرلیپیدمی</li>
+                <li>هایپرگلیسمی</li>
+                <li>نارسایی احتقانی قلب</li>
+                <li>هایپوتروئیدیسم</li>
+            </ol>
+            <details><summary>نمایش پاسخ</summary><p><strong>پاسخ:</strong> الف) هایپرلیپیدمی<br><strong>تشریح:</strong> طبق متن جزوه (صفحه ۴۱)، هایپوناترمی ایزوتونیک یا کاذب در هایپرلیپیدمی و هایپرپروتئینمی مشاهده می‌شود.</p></details>
+        </div>
+
+        <div class="quiz-question">
+            <p><strong>۶۱ - کدام یک از موارد (۱-اسیدوز متابولیک، ۲-الکالوز متابولیک، ۳-اسیدوز تنفسی، ۴-الکالوز تنفسی) باعث هایپرکالمی در سرم می‌شود؟</strong></p>
+            <ol type="a">
+                <li>۲ و ۳</li>
+                <li>۱ و ۴</li>
+                <li>۱ و ۳</li>
+                <li>۲ و ۴</li>
+            </ol>
+            <details><summary>نمایش پاسخ</summary><p><strong>پاسخ:</strong> ج) ۱ و ۳<br><strong>تشریح:</strong> طبق متن جزوه (صفحه ۱۶)، اسیدوز (چه متابولیک و چه تنفسی) باعث انتقال پتاسیم از داخل به خارج سلول و هایپرکالمی می‌شود.</p></details>
+        </div>
+
+        <div class="quiz-question">
+            <p><strong>۶۲ - در کدام مورد از دست رفتن میلین در سلول‌های مغزی مشاهده می‌شود؟</strong></p>
+            <ol type="a">
+                <li>درمان سریع هایپوناترمی مزمن</li>
+                <li>درمان سریع هایپرکالمی مزمن</li>
+                <li>درمان سریع هایپرناترمی مزمن</li>
+                <li>درمان سریع هایپوکالمی مزمن</li>
+            </ol>
+            <details><summary>نمایش پاسخ</summary><p><strong>پاسخ:</strong> الف) درمان سریع هایپوناترمی مزمن<br><strong>تشریح:</strong> طبق متن جزوه (صفحه ۴۳)، اصلاح سریع هایپوناترمی مزمن سبب سندرم دمیلینه‌کننده اسموتیک (ODS) و از دست رفتن میلین می‌شود.</p></details>
+        </div>
+
+        <div class="quiz-question">
+            <p><strong>۶۳ - کدام مورد باعث هایپوکالمی می‌شود؟</strong></p>
+            <ol type="a">
+                <li>تزریق انسولین در هایپرگلیسمی</li>
+                <li>اسیدوز متابولیک</li>
+                <li>همولیز داخل عروقی</li>
+                <li>فقدان آلودسترون</li>
+            </ol>
+            <details><summary>نمایش پاسخ</summary><p><strong>پاسخ:</strong> الف) تزریق انسولین در هایپرگلیسمی<br><strong>تشریح:</strong> طبق متن جزوه (صفحه ۴۹)، تزریق انسولین باعث انتقال پتاسیم به داخل سلول و کاهش پتاسیم سرم (هایپوکالمی) می‌شود.</p></details>
+        </div>
+
+        <div class="quiz-question">
+            <p><strong>۶۴ - بیماری منک در ارتباط با اختلال متابولیسم کدام عنصر است؟</strong></p>
+            <ol type="a">
+                <li>آهن</li>
+                <li>مس</li>
+                <li>منگنز</li>
+                <li>روی</li>
+            </ol>
+            <details><summary>نمایش پاسخ</summary><p><strong>پاسخ:</strong> ب) مس<br><strong>تشریح:</strong> طبق متن جزوه (صفحه ۵۶)، بیماری منک (Menkes) در ارتباط با اختلال در متابولیسم مس است.</p></details>
+        </div>
+
+        <div class="quiz-question">
+            <p><strong>۶۵ - کدام مورد حامل آهن در خون است؟</strong></p>
+            <ol type="a">
+                <li>ترانسفرین</li>
+                <li>سرولوپالسمین</li>
+                <li>هیسیدین</li>
+                <li>هموپکسین</li>
+            </ol>
+            <details><summary>نمایش پاسخ</summary><p><strong>پاسخ:</strong> الف) ترانسفرین<br><strong>تشریح:</strong> طبق متن جزوه (صفحه ۵۴)، آهن در داخل جریان خون به شکل فریک متصل به ترانسفرین منتقل می‌شود.</p></details>
+        </div>
+
+        <div class="quiz-question">
+            <p><strong>۶۶ - کاهش عملکرد سولفیت اکسیداز در اثر کمبود کدام مورد ایجاد می‌شود؟</strong></p>
+            <ol type="a">
+                <li>آهن</li>
+                <li>مس</li>
+                <li>مولیبدن</li>
+                <li>روی</li>
+            </ol>
+            <details><summary>نمایش پاسخ</summary><p><strong>پاسخ:</strong> ب) مس<br><strong>تشریح:</strong> طبق کلید جزوه گزینه ب صحیح است. (متن جزوه صفحه ۵۳، از نقص سولفیت‌اکسیداز به دلیل کمبود مولیبدن نام برده است).</p></details>
+        </div>
+
+        <div class="quiz-question">
+            <p><strong>۶۷ - کدام پروتئین در اکسایش دو ظرفیتی (Fe2+) به سه ظرفیتی نقش دارد؟</strong></p>
+            <ol type="a">
+                <li>هاپتوگلوبین</li>
+                <li>سرولوپالسمین</li>
+                <li>ترانسفرین</li>
+                <li>هموپکسین</li>
+            </ol>
+            <details><summary>نمایش پاسخ</summary><p><strong>پاسخ:</strong> الف) هاپتوگلوبین<br><strong>تشریح:</strong> طبق کلید جزوه گزینه الف صحیح است. (متن جزوه صفحه ۵۵، سرولوپالسمین را عامل تبدیل آهن فرو به فریک معرفی می‌کند).</p></details>
+        </div>
+
+        <div class="quiz-question">
+            <p><strong>۶۸ - حلقه کایزر فلیشر در اثر رسوب کدام عنصر در قرنیه ایجاد می‌شود؟</strong></p>
+            <ol type="a">
+                <li>مس</li>
+                <li>آهن</li>
+                <li>نقره</li>
+                <li>طلا</li>
+            </ol>
+            <details><summary>نمایش پاسخ</summary><p><strong>پاسخ:</strong> د) طلا<br><strong>تشریح:</strong> طبق کلید جزوه گزینه د صحیح است. (متن جزوه صفحه ۵۷، رسوب مس در قرنیه را عامل ایجاد حلقه‌های قهوه‌ای، زرد یا سبز (حلقه کایزر فلیشر) می‌داند).</p></details>
+        </div>
+
+        <div class="quiz-question">
+            <p><strong>۶۹ - آیون فلورید کدام آنزیم را مهار می کند؟</strong></p>
+            <ol type="a">
+                <li>انوالز</li>
+                <li>هگزوکیناز</li>
+                <li>فسفوفروکتوکیناز</li>
+                <li>پیروات کیناز</li>
+            </ol>
+            <details><summary>نمایش پاسخ</summary><p><strong>پاسخ:</strong> ب) هگزوکیناز<br><strong>تشریح:</strong> طبق کلید جزوه گزینه ب صحیح است. (متن جزوه صفحه ۵۴، آنیون فلورید با مهار آنزیم انوالز در مسیر گلیکولیز مانع فعالیت باکتری‌ها می‌شود).</p></details>
+        </div>
+
+        <div class="quiz-question">
+            <p><strong>۷۰ - کمبود کدام مورد سبب مقاومت به انسولین می شود؟</strong></p>
+            <ol type="a">
+                <li>منگنز</li>
+                <li>کروم</li>
+                <li>ید</li>
+                <li>مس</li>
+            </ol>
+            <details><summary>نمایش پاسخ</summary><p><strong>پاسخ:</strong> د) مس<br><strong>تشریح:</strong> طبق کلید جزوه گزینه د صحیح است. (متن جزوه صفحه ۵۷، کمبود کروم را عامل مقاومت به انسولین می‌داند).</p></details>
+        </div>
+
+        <div class="quiz-question">
+            <p><strong>۷۱ - کدام مورد سبب آلزایمر می شود؟</strong></p>
+            <ol type="a">
+                <li>آلومینیم</li>
+                <li>کروم</li>
+                <li>مس</li>
+                <li>مولیبدن</li>
+            </ol>
+            <details><summary>نمایش پاسخ</summary><p><strong>پاسخ:</strong> ب) کروم<br><strong>تشریح:</strong> طبق کلید جزوه گزینه ب صحیح است. (متن جزوه صفحه ۵۹، آلومینیم را از عوامل ایجادکننده آلزایمر می‌داند).</p></details>
+        </div>
+
+        <div class="quiz-question">
+            <p><strong>۷۲ - کدام مورد کوفاکتور سوپراکسیددیسموتاز میتوکندریایی است؟</strong></p>
+            <ol type="a">
+                <li>آلومینیم</li>
+                <li>کروم</li>
+                <li>منگنز</li>
+                <li>مس</li>
+            </ol>
+            <details><summary>نمایش پاسخ</summary><p><strong>پاسخ:</strong> ج) منگنز<br><strong>تشریح:</strong> طبق متن جزوه (صفحه ۵۷)، منگنز به عنوان کوفاکتور سوپراکسیددیسموتاز میتوکندریایی عمل می‌کند.</p></details>
+        </div>
+
+        <div class="quiz-question">
+            <p><strong>۷۳ - کدام مورد کوفاکتور گلوتاتیون پراکسیداز است؟</strong></p>
+            <ol type="a">
+                <li>سلنیوم</li>
+                <li>مس</li>
+                <li>منگنز</li>
+                <li>روی</li>
+            </ol>
+            <details><summary>نمایش پاسخ</summary><p><strong>پاسخ:</strong> الف) سلنیوم<br><strong>تشریح:</strong> طبق متن جزوه (صفحه ۵۸)، سلنیوم کوفاکتور آنزیم گلوتاتیون پراکسیداز است.</p></details>
+        </div>
+
+        <div class="quiz-question">
+            <p><strong>۷۴ - کدام مورد عملکرد انسولین را تقلید می کنند؟</strong></p>
+            <ol type="a">
+                <li>سلنیوم</li>
+                <li>وانادیم</li>
+                <li>فنیل کتون یوری</li>
+                <li>وجود مت هموگلوبین</li>
+            </ol>
+            <details><summary>نمایش پاسخ</summary><p><strong>پاسخ:</strong> ب) وانادیم<br><strong>تشریح:</strong> طبق متن جزوه (صفحه ۵۸)، ترکیبات وانادیوم می‌توانند عملکرد انسولین را تقلید کنند.</p></details>
+        </div>
+
+        <div class="quiz-question">
+            <p><strong>۷۵ - کمبود کدام مورد در ایجاد بیماری کشان نقش دارد؟</strong></p>
+            <ol type="a">
+                <li>روی</li>
+                <li>مس</li>
+                <li>سلنیوم</li>
+                <li>آهن</li>
+            </ol>
+            <details><summary>نمایش پاسخ</summary><p><strong>پاسخ:</strong> د) سلنیوم<br><strong>تشریح:</strong> طبق متن جزوه (صفحه ۵۸)، بیماری کاردیومیوپاتی کشان مرتبط با کمبود سلنیوم است.</p></details>
+        </div>
+
+        <div class="quiz-question">
+            <p><strong>۷۶ - کدام مورد در بیوسنتز حلقه هم اختلال ایجاد می کند؟</strong></p>
+            <ol type="a">
+                <li>سرب</li>
+                <li>وانادیم</li>
+                <li>آهن</li>
+                <li>مس</li>
+            </ol>
+            <details><summary>نمایش پاسخ</summary><p><strong>پاسخ:</strong> الف) سرب<br><strong>تشریح:</strong> طبق متن جزوه (صفحه ۵۹)، سرب در بیوسنتز حلقه هم اختلال ایجاد می‌کند و آنزیم‌های ALA دهیدراتاز و فروکلاتاز را مهار می‌کند.</p></details>
+        </div>
+
+        <div class="quiz-question">
+            <p><strong>۷۷ - مسمومیت با کدام مورد سبب نارسایی کلیوی می شود؟</strong></p>
+            <ol type="a">
+                <li>منگنز</li>
+                <li>وانادیم</li>
+                <li>کادمیوم</li>
+                <li>مولیبدن</li>
+            </ol>
+            <details><summary>نمایش پاسخ</summary><p><strong>پاسخ:</strong> د) مولیبدن<br><strong>تشریح:</strong> طبق کلید جزوه گزینه د صحیح است. (متن جزوه صفحه ۵۹، کادمیوم را عامل آسیب کلیوی و نارسایی کلیه معرفی می‌کند).</p></details>
+        </div>
+
+        <div class="quiz-question">
+            <p><strong>۷۸ - گوانیدواستات مورد استفاده برای بیوسنتز کراتین از کدام اسیدهای آمینه در کلیه ساخته می شود؟</strong></p>
+            <ol type="a">
+                <li>گالیسین و آرژینین</li>
+                <li>گالیسین و لیزین</li>
+                <li>لیزین و هیستیدین</li>
+                <li>هیستیدین و آرژینین</li>
+            </ol>
+            <details><summary>نمایش پاسخ</summary><p><strong>پاسخ:</strong> الف) گالیسین و آرژینین<br><strong>تشریح:</strong> طبق متن جزوه (صفحه ۳)، گوانیدواستات از اسیدهای آمینه آرژینین و گالیسین در کلیه ساخته می‌شود.</p></details>
+        </div>
+
+        <div class="quiz-question">
+            <p><strong>۷۹ - برای اندازه گیری کراتینین از چه معرفی استفاده می شود؟</strong></p>
+            <ol type="a">
+                <li>ارتوکروز فالتالین</li>
+                <li>پیکرات قلیایی</li>
+                <li>مولیبدات</li>
+                <li>ید</li>
+            </ol>
+            <details><summary>نمایش پاسخ</summary><p><strong>پاسخ:</strong> ب) پیکرات قلیایی<br><strong>تشریح:</strong> طبق متن جزوه (صفحه ۶۴)، در روش شیمیایی اندازه‌گیری کراتینین از پیکرات قلیایی استفاده می‌شود.</p></details>
+        </div>
+
+        <div class="quiz-question">
+            <p><strong>۸۰ - آزمون کلیرانس کدام ماده بهترین ارزیابی را در خصوص میزان فیلتراسیون گلومرولی به دست می‌دهد؟</strong></p>
+            <ol type="a">
+                <li>کراتینین</li>
+                <li>اوره</li>
+                <li>اینولین</li>
+                <li>گلوکز</li>
+            </ol>
+            <details><summary>نمایش پاسخ</summary><p><strong>پاسخ:</strong> ج) اینولین<br><strong>تشریح:</strong> طبق متن جزوه (صفحه ۶۶)، آزمون کلیرانس اینولین بهترین ارزیابی را در خصوص میزان فیلتراسیون گلومرولی به دست می‌دهد.</p></details>
+        </div>
+    </div>
+
+    <!-- Section 5: Urinalysis -->
+    <div class="section">
+        <h2>🔬 بخش ۵: آنالیز ادرار</h2>
+
+        <div class="behetsino-tip">
+            <h4>🔮 بهشتینویار</h4>
+            <p>رنگ ادرار می‌تواند سرنخ‌های مهمی بدهد: قرمز (هموگلوبینوری، پورفیری)، قهوه‌ای تیره (بیلی‌روبینوری، متهموگلوبین)، نارنجی (ریفامپیسین).</p>
+        </div>
+
+        <div class="quiz-question">
+            <p><strong>۸۱ - رنگ ادرار در کدام مورد می تواند قرمز شود؟</strong></p>
+            <ol type="a">
+                <li>کاپتون یوری</li>
+                <li>دفع بیل یوری</li>
+                <li>هموگلوبین یوری</li>
+                <li>روی</li>
+            </ol>
+            <details><summary>نمایش پاسخ</summary><p><strong>پاسخ:</strong> ج) هموگلوبین یوری<br><strong>تشریح:</strong> طبق متن جزوه (صفحه ۶۸)، ادرار قرمز رنگ گاهی به دلیل هموگلوبین‌یوری، هماچوری و میوگلوبین‌یوری است.</p></details>
+        </div>
+
+        <div class="quiz-question">
+            <p><strong>۸۲ - رنگ ادرار در کدام مورد قهوه ای تیره می شود؟</strong></p>
+            <ol type="a">
+                <li>فنیل کتون یوری</li>
+                <li>وجود مت هموگلوبین</li>
+                <li>برخی از موارد پورفیری</li>
+                <li>کاپتون یوری</li>
+            </ol>
+            <details><summary>نمایش پاسخ</summary><p><strong>پاسخ:</strong> د) وجود مت هموگلوبین<br><strong>تشریح:</strong> طبق متن جزوه (صفحه ۶۸)، به هنگام وجود هموگلوبین در ادرار و تبدیل آن به مت‌هموگلوبین در ادرار اسیدی، رنگ ادرار قهوه‌ای تیره می‌شود.</p></details>
+        </div>
+
+        <div class="quiz-question">
+            <p><strong>۸۳ - رنگ ادرار در کدام مورد قرمز می شود؟</strong></p>
+            <ol type="a">
+                <li>کاپتون یوری</li>
+                <li>برخی از موارد پورفیری</li>
+                <li>فنیل کتون یوری</li>
+                <li>بیلی‌روبین</li>
+            </ol>
+            <details><summary>نمایش پاسخ</summary><p><strong>پاسخ:</strong> ب) برخی از موارد پورفیری<br><strong>تشریح:</strong> طبق متن جزوه (صفحه ۶۸)، ادرار قرمز رنگ گاهی به دلیل برخی از موارد پورفیری (اختلال در بیوسنتز حلقه هم) است.</p></details>
+        </div>
+
+        <div class="quiz-question">
+            <p><strong>۸۴ - رنگ ادرار در کدام مورد قرمز می شود؟</strong></p>
+            <ol type="a">
+                <li>کاپتون یوری</li>
+                <li>برخی از موارد پورفیری</li>
+                <li>فنیل کتون یوری</li>
+                <li>بیلی‌روبین</li>
+            </ol>
+            <details><summary>نمایش پاسخ</summary><p><strong>پاسخ:</strong> ب) برخی از موارد پورفیری<br><strong>تشریح:</strong> طبق متن جزوه (صفحه ۶۸)، ادرار قرمز رنگ گاهی به دلیل برخی از موارد پورفیری است.</p></details>
+        </div>
+
+        <div class="quiz-question">
+            <p><strong>۸۵ - چرا ادرار در اثر ماندن تیره رنگ می شود؟</strong></p>
+            <ol type="a">
+                <li>ایجاد مت هموگلوبین</li>
+                <li>ایجاد مت هموگلوبین</li>
+                <li>ایجاد مت هموگلوبین</li>
+                <li>تبدیل اوروبیلینوزن به اوروبیلین</li>
+            </ol>
+            <details><summary>نمایش پاسخ</summary><p><strong>پاسخ:</strong> د) تبدیل اوروبیلینوزن به اوروبیلین<br><strong>تشریح:</strong> طبق متن جزوه (صفحه ۶۸)، ادرار در اثر ماندن تیره رنگ می‌شود که علت آن تبدیل اوروبیلینیوژن موجود در ادرار به اوروبیلین است.</p></details>
+        </div>
+
+        <div class="quiz-question">
+            <p><strong>۸۶ - کدام مورد سبب ایجاد رنگ نارنجی در ادرار می شود؟</strong></p>
+            <ol type="a">
+                <li>بیل یوری</li>
+                <li>فنیل کتون</li>
+                <li>ریفامپیسین</li>
+                <li>کاپتون</li>
+            </ol>
+            <details><summary>نمایش پاسخ</summary><p><strong>پاسخ:</strong> ج) ریفامپیسین<br><strong>تشریح:</strong> طبق متن جزوه (صفحه ۶۸)، مصرف ریفامپیسین می‌تواند رنگ ادرار را نارنجی کند.</p></details>
+        </div>
+
+        <div class="quiz-question">
+            <p><strong>۸۷ - رنگ ادرار در کدام مورد (به هنگام قلیایی بودن ادرار) قهوه ای تیره (سیاه) می شود؟</strong></p>
+            <ol type="a">
+                <li>الکاپتون یوری</li>
+                <li>دفع بیل یوری</li>
+                <li>فنیل کتون یوری</li>
+                <li>بیماری ادرار شیره افرا (MSUD)</li>
+            </ol>
+            <details><summary>نمایش پاسخ</summary><p><strong>پاسخ:</strong> الف) الکاپتون یوری<br><strong>تشریح:</strong> طبق متن جزوه (صفحه ۶۸)، در آلکاپتون‌یوری (دفع اسید هموژانتینزیک) به هنگام قلیایی بودن ادرار، رنگ ادرار قهوه‌ای تیره (سیاه) می‌شود.</p></details>
+        </div>
+
+        <div class="quiz-question">
+            <p><strong>۸۸ - دفع بیش از ۵۰۰ میلی‌لیتر ادرار در شب را چه می‌نامند؟</strong></p>
+            <ol type="a">
+                <li>نکچوری</li>
+                <li>آنوری</li>
+                <li>پلی‌یوری</li>
+                <li>الیگوری</li>
+            </ol>
+            <details><summary>نمایش پاسخ</summary><p><strong>پاسخ:</strong> الف) نکچوری<br><strong>تشریح:</strong> طبق متن جزوه (صفحه ۶۹)، دفع ادرار بیش از ۵۰۰ میلی‌لیتر در شب را نوکتوری یا نوکچوری گویند.</p></details>
+        </div>
+
+        <div class="quiz-question">
+            <p><strong>۸۹ - در کدام مورد دفع پروتئین از ادرار مشاهده می‌شود؟</strong></p>
+            <ol type="a">
+                <li>فتوکرموسیتوما</li>
+                <li>اکرمگالی</li>
+                <li>نفروپاتی دیابتی</li>
+                <li>کلستاز ناشی از مصرف دارو</li>
+            </ol>
+            <details><summary>نمایش پاسخ</summary><p><strong>پاسخ:</strong> ج) نفروپاتی دیابتی<br><strong>تشریح:</strong> طبق متن جزوه (صفحه ۷۰)، نفروپاتی دیابتی از علل وجود پروتئین در ادرار (پروتئین‌یوری) است.</p></details>
+        </div>
+
+        <div class="quiz-question">
+            <p><strong>۹۰ - کاهش مقدار کلسیم خون (هایپوکلسمی) در کدام مورد مشاهده نمی‌شود؟</strong></p>
+            <ol type="a">
+                <li>هایپوپاراتیروئیدسیم</li>
+                <li>افزایش منیزیم</li>
+                <li>کمبود ویتامین D</li>
+                <li>برخی از بیماری‌های کلیوی</li>
+            </ol>
+            <details><summary>نمایش پاسخ</summary><p><strong>پاسخ:</strong> ب) افزایش منیزیم<br><strong>تشریح:</strong> طبق متن جزوه (صفحه ۵۲)، هایپوکلسمی در هایپوپاراتیروئیدیسم، کمبود منیزیم، کمبود ویتامین D و برخی بیماری‌های کلیوی مشاهده می‌شود. افزایش منیزیم جزء این موارد نیست.</p></details>
+        </div>
+
+        <div class="quiz-question">
+            <p><strong>۹۱ - در فرد سالم کدام مورد بعد از ورزش شدید مشاهده نمی‌شود؟</strong></p>
+            <ol type="a">
+                <li>وجود خون در ادرار</li>
+                <li>دفع گلوکز از ادرار</li>
+                <li>کنون‌یوری</li>
+                <li>پروتئینوری خفیف</li>
+            </ol>
+            <details><summary>نمایش پاسخ</summary><p><strong>پاسخ:</strong> ج) دفع گلوکز از ادرار<br><strong>تشریح:</strong> طبق متن جزوه، پس از ورزش شدید، وجود خون در ادرار، پروتئین‌یوری و کتون‌یوری ممکن است رخ دهد، اما گلوکزوری معمولاً دیده نمی‌شود.</p></details>
+        </div>
+
+        <div class="quiz-question">
+            <p><strong>۹۲ - کنون‌یوری در کدام مورد مشاهده نمی‌شود؟</strong></p>
+            <ol type="a">
+                <li>مسمومیت توام با استفراغ</li>
+                <li>سندروم نفروتیک</li>
+                <li>دیابت قندی</li>
+                <li>روزه‌داری</li>
+            </ol>
+            <details><summary>نمایش پاسخ</summary><p><strong>پاسخ:</strong> د) سندروم نفروتیک<br><strong>تشریح:</strong> طبق متن جزوه (صفحه ۷۱)، کتون‌یوری در دیابت قندی، گرسنگی، استفراغ و ورزش شدید دیده می‌شود. سندروم نفروتیک جزء علل کتون‌یوری نیست.</p></details>
+        </div>
+
+        <div class="quiz-question">
+            <p><strong>۹۳ - در خصوص وجود بیلی‌روبین در ادرار کدام مورد درست است؟</strong></p>
+            <ol type="a">
+                <li>در ادرار، فقط بیلی‌روبین غیرکنزگونه می‌تواند حضور داشته باشد.</li>
+                <li>در ادرار، فقط بیلی‌روبین کنزگونه می‌تواند حضور داشته باشد.</li>
+                <li>در ادرار، هم بیلی‌روبین کنزگونه و هم غیرکنزگونه می‌تواند حضور داشته باشد.</li>
+                <li>در ادرار، در هیچ شرایطی بیلی‌روبین کنزگونه و غیرکنزگونه حضور ندارد.</li>
+            </ol>
+            <details><summary>نمایش پاسخ</summary><p><strong>پاسخ:</strong> ب) در ادرار، فقط بیلی‌روبین کنزگونه می‌تواند حضور داشته باشد.<br><strong>تشریح:</strong> طبق متن جزوه (صفحه ۷۱)، تنها بیلی‌روبین کنژوگه (مستقیم) می‌تواند در ادرار پدیدار شود.</p></details>
+        </div>
+
+        <div class="quiz-question">
+            <p><strong>۹۴ - در کدام مورد خون در ادرار (هماجوری) مشاهده نمی شود؟</strong></p>
+            <ol type="a">
+                <li>کلستاز</li>
+                <li>ورزش شدید</li>
+                <li>وجود سنگ‌های کلیوی</li>
+                <li>مصرف برخی از داروها و مواد سمی</li>
+            </ol>
+            <details><summary>نمایش پاسخ</summary><p><strong>پاسخ:</strong> الف) کلستاز<br><strong>تشریح:</strong> طبق متن جزوه (صفحه ۷۱)، هماچوری در بیماری کلیوی، سنگ کلیه، ورزش شدید و مسمومیت دارویی دیده می‌شود. کلستاز از علل بیلی‌روبین‌یوری است نه هماچوری.</p></details>
+        </div>
+
+        <div class="quiz-question">
+            <p><strong>۹۵ - وجود کدام مورد در ادرار می‌تواند نشان‌گر عفونت در ادرار باشد؟</strong></p>
+            <ol type="a">
+                <li>بیلی‌روبین</li>
+                <li>نیتریت</li>
+                <li>اوروبیلینوزن</li>
+                <li>اجسام کنونی</li>
+            </ol>
+            <details><summary>نمایش پاسخ</summary><p><strong>پاسخ:</strong> ب) نیتریت<br><strong>تشریح:</strong> طبق متن جزوه (صفحه ۷۱)، وجود نیتریت در ادرار نشان‌گر عفونت دستگاه ادراری است.</p></details>
+        </div>
+
+        <div class="quiz-question">
+            <p><strong>۹۶ - پیروی می‌تواند مؤید وجود کدام مورد در ادرار باشد؟</strong></p>
+            <ol type="a">
+                <li>چرک</li>
+                <li>میوگلوبین</li>
+                <li>خون</li>
+                <li>اجسام کنونی</li>
+            </ol>
+            <details><summary>نمایش پاسخ</summary><p><strong>پاسخ:</strong> الف) چرک<br><strong>تشریح:</strong> طبق متن جزوه (صفحه ۷۲)، مشاهده ۱۰-۵ لکوسیت در هر میدان میکروسکوپی مؤید وجود چرک (پیوری) است.</p></details>
+        </div>
+
+        <div class="quiz-question">
+            <p><strong>۹۷ - کدام نوع سیلندر به هنگام توقف جریان ادرار مشاهده می‌شود؟</strong></p>
+            <ol type="a">
+                <li>سیلندر هیالن</li>
+                <li>سیلندر گلبول قرمز</li>
+                <li>سیلندر گلبول سفید</li>
+                <li>سیلندر مومی</li>
+            </ol>
+            <details><summary>نمایش پاسخ</summary><p><strong>پاسخ:</strong> د) سیلندر مومی<br><strong>تشریح:</strong> طبق متن جزوه (صفحه ۷۳)، سیلندر مومی به هنگام توقف جریان ادرار و نارسایی مزمن کلیه مشاهده می‌شود.</p></details>
+        </div>
+
+        <div class="quiz-question">
+            <p><strong>۹۸ - در ادرار بیمارانی که اتیلن‌گلیکول مصرف کرده‌اند چه نوع کریستالی مشاهده می‌شود؟</strong></p>
+            <ol type="a">
+                <li>اسید اوریک</li>
+                <li>کلسیم اگزالت</li>
+                <li>ترپیل فسفات</li>
+                <li>فسفات کلسیم</li>
+            </ol>
+            <details><summary>نمایش پاسخ</summary><p><strong>پاسخ:</strong> ب) کلسیم اگزالت<br><strong>تشریح:</strong> طبق متن جزوه (صفحه ۷۴)، در ادرار بیمارانی که اتیلن‌گلیکول مصرف کرده‌اند، کریستال کلسیم اگزالات مشاهده می‌شود.</p></details>
+        </div>
+
+        <div class="quiz-question">
+            <p><strong>۹۹ - شکل کدام کریستال مشابه پاکت نامه است؟</strong></p>
+            <ol type="a">
+                <li>اسید اوریک</li>
+                <li>فسفات کلسیم</li>
+                <li>کلسیم اگزالت</li>
+                <li>بی‌اورات‌آمونیم</li>
+            </ol>
+            <details><summary>نمایش پاسخ</summary><p><strong>پاسخ:</strong> ج) کلسیم اگزالت<br><strong>تشریح:</strong> طبق متن جزوه (صفحه ۷۴)، شکل کریستال اگزالات کلسیم مشابه پاکت نامه است.</p></details>
+        </div>
+
+        <div class="quiz-question">
+            <p><strong>۱۰۰ - شکل داده شده مربوط به چه کریستالی در ادرار است؟ (تصویر کریستال)</strong></p>
+            <ol type="a">
+                <li>سیستئین</li>
+                <li>تریپل‌فسفات</li>
+                <li>کلسیم اگزالت</li>
+                <li>بی‌اورات‌آمونیم</li>
+            </ol>
+            <details><summary>نمایش پاسخ</summary><p><strong>پاسخ:</strong> الف) سیستئین<br><strong>تشریح:</strong> تصویر ارائه‌شده در جزوه (صفحه ۷۴) مربوط به کریستال سیستئین است که به شکل شش‌ضلعی است.</p></details>
+        </div>
+    </div>
+
+    <!-- Section 6: Advanced & Past Exam Questions (101-120) -->
+    <div class="section">
+        <h2>📝 بخش ۶: سوالات جامع و آزمون‌های گذشته (۱۰۱ تا ۱۲۰)</h2>
+
+        <div class="quiz-question">
+            <p><strong>۱۰۱ - در آنالیز ادرار سیلندر گلبول قرمز وجود دارد. کدام گزینه تشخیص محتمل‌تر است؟</strong></p>
+            <ol type="a">
+                <li>گلومرولونفریت</li>
+                <li>واسکولیت</li>
+                <li>پیلونفریت</li>
+                <li>گلومرولونفریت</li>
+            </ol>
+            <details><summary>نمایش پاسخ</summary><p><strong>پاسخ:</strong> د) گلومرولونفریت<br><strong>تشریح:</strong> طبق کلید جزوه و متن (صفحه ۷۳)، سیلندر گلبول قرمز در گلومرولونفریت، تمرینات شدید بدنی، IgA نفروپاتی، واسکولیت و پیلونفریت دیده می‌شود.</p></details>
+        </div>
+
+        <div class="quiz-question">
+            <p><strong>۱۰۲ - کدام یک از سلول‌های زیر دارای حجر یاخته‌ای است؟</strong></p>
+            <ol type="a">
+                <li>گلومرولونفریت</li>
+                <li>واسکولیت</li>
+                <li>پیلونفریت</li>
+                <li>گلومرولونفریت</li>
+            </ol>
+            <details><summary>نمایش پاسخ</summary><p><strong>پاسخ:</strong> ج) پیلونفریت<br><strong>تشریح:</strong> طبق کلید جزوه و متن (صفحه ۷۲)، سلول‌های پوششی توبول کلیه با حجر یاخته‌ای در پیلونفریت و عفونت ویروسی مشاهده می‌شوند.</p></details>
+        </div>
+
+        <div class="quiz-question">
+            <p><strong>۱۰۳ - مرد ۳۵ ساله‌ای با تشخیص نارسایی حاد کلیه... کدام مورد محتمل‌تر است؟</strong></p>
+            <ol type="a">
+                <li>نفریت بینابینی</li>
+                <li>گلومرولونفریت</li>
+                <li>آسیب حاد توبولی</li>
+                <li>آترواسکلروز</li>
+            </ol>
+            <details><summary>نمایش پاسخ</summary><p><strong>پاسخ:</strong> ب) گلومرولونفریت<br><strong>تشریح:</strong> طبق کلید جزوه گزینه ب صحیح است.</p></details>
+        </div>
+
+        <div class="quiz-question">
+            <p><strong>۱۰۴ - تجویز کدام دارو می‌تواند منجر به افزایش کراتینین سرم بدون کاهش واقعی GFR شود؟</strong></p>
+            <ol type="a">
+                <li>سیمتیدین</li>
+                <li>وانکومایسین</li>
+                <li>تری‌متوپریم</li>
+                <li>سفالوسپورین</li>
+            </ol>
+            <details><summary>نمایش پاسخ</summary><p><strong>پاسخ:</strong> الف) سیمتیدین<br><strong>تشریح:</strong> طبق کلید جزوه گزینه الف صحیح است. (طبق متن جزوه صفحه ۶۶، مصرف داروهایی از جمله سیمتیدین، سالیسیلات‌ها و تری‌متوپریم باعث افزایش کراتینین سرم می‌شوند).</p></details>
+        </div>
+
+        <div class="quiz-question">
+            <p><strong>۱۰۵ - مرد ۴۵ ساله‌ای به دلیل تهوع، استفراغ، بی‌اشتهایی، کاهش وزن، درد شکم و اسهال... کدام مورد محتمل‌تر است؟</strong></p>
+            <ol type="a">
+                <li>کروموگرانین A</li>
+                <li>سوماتواستاتین</li>
+                <li>هیستامین</li>
+                <li>سروتونین</li>
+            </ol>
+            <details><summary>نمایش پاسخ</summary><p><strong>پاسخ:</strong> ج) هیستامین<br><strong>تشریح:</strong> طبق کلید جزوه گزینه ج صحیح است.</p></details>
+        </div>
+
+        <div class="quiz-question">
+            <p><strong>۱۰۶ - مرد ۴۳ ساله‌ای با فشار خون بالا و کاهش حجم ادرار... کدام تشخیص محتمل‌تر است؟</strong></p>
+            <ol type="a">
+                <li>سندرم نفروتیک</li>
+                <li>نارسایی حاد کلیه</li>
+                <li>هیپرآلدوسترونیسم</li>
+                <li>هایپوپاراتیروئیدیسم</li>
+            </ol>
+            <details><summary>نمایش پاسخ</summary><p><strong>پاسخ:</strong> د) هایپوپاراتیروئیدیسم<br><strong>تشریح:</strong> طبق کلید جزوه گزینه د صحیح است.</p></details>
+        </div>
+
+        <div class="quiz-question">
+            <p><strong>۱۰۷ - کدام یک از پروتئین‌های زیر در تشخیص مولکولی بیماری کلیوی... نقش دارد؟</strong></p>
+            <ol type="a">
+                <li>پروتئینوری</li>
+                <li>آلبومینوری</li>
+                <li>β2-میکروگلوبولین</li>
+                <li>سیستاتین C</li>
+            </ol>
+            <details><summary>نمایش پاسخ</summary><p><strong>پاسخ:</strong> ب) آلبومینوری<br><strong>تشریح:</strong> طبق کلید جزوه گزینه ب صحیح است. (طبق متن جزوه صفحه ۷۰، میکروآلبومین‌یوری در ارزیابی عملکرد کلیه مهم است).</p></details>
+        </div>
+
+        <div class="quiz-question">
+            <p><strong>۱۰۸ - مرد ۳۵ ساله‌ای با تشخیص نارسایی حاد کلیه... کدام مورد محتمل‌تر است؟</strong></p>
+            <ol type="a">
+                <li>نکروز حاد توبولی</li>
+                <li>نفریت بینابینی</li>
+                <li>بیماری آندومتر</li>
+                <li>بیماری کلیوی</li>
+            </ol>
+            <details><summary>نمایش پاسخ</summary><p><strong>پاسخ:</strong> ج) بیماری آندومتر<br><strong>تشریح:</strong> طبق کلید جزوه گزینه ج صحیح است. (به نظر می‌رسد در کلید اشتباه تایپی وجود دارد).</p></details>
+        </div>
+
+        <div class="quiz-question">
+            <p><strong>۱۰۹ - در ادرار بیمارانی که اتیلن‌گلیکول مصرف کرده‌اند چه نوع کریستالی مشاهده می‌شود؟</strong></p>
+            <ol type="a">
+                <li>اسید اوریک</li>
+                <li>کلسیم اگزالت</li>
+                <li>تریپل فسفات</li>
+                <li>فسفات کلسیم</li>
+            </ol>
+            <details><summary>نمایش پاسخ</summary><p><strong>پاسخ:</strong> د) فسفات کلسیم<br><strong>تشریح:</strong> طبق کلید جزوه گزینه د صحیح است. (طبق متن جزوه صفحه ۷۴، در اتیلن‌گلیکول کریستال کلسیم اگزالات مشاهده می‌شود).</p></details>
+        </div>
+
+        <div class="quiz-question">
+            <p><strong>۱۱۰ - شکل کدام کریستال مشابه پاکت نامه است؟</strong></p>
+            <ol type="a">
+                <li>اسید اوریک</li>
+                <li>فسفات کلسیم</li>
+                <li>کلسیم اگزالت</li>
+                <li>بی‌اورات‌آمونیم</li>
+            </ol>
+            <details><summary>نمایش پاسخ</summary><p><strong>پاسخ:</strong> د) بی‌اورات‌آمونیم<br><strong>تشریح:</strong> طبق کلید جزوه گزینه د صحیح است. (طبق متن جزوه صفحه ۷۴، کلسیم اگزالات شبیه پاکت نامه است).</p></details>
+        </div>
+
+        <div class="quiz-question">
+            <p><strong>۱۱۱ - مرد ۲۵ ساله‌ای با تشخیص نارسایی حاد کلیه... کدام مورد محتمل‌تر است؟</strong></p>
+            <ol type="a">
+                <li>سندرم نفروتیک</li>
+                <li>نارسایی حاد کلیه</li>
+                <li>هیپرآلدوسترونیسم</li>
+                <li>هایپوپاراتیروئیدیسم</li>
+            </ol>
+            <details><summary>نمایش پاسخ</summary><p><strong>پاسخ:</strong> د) هایپوپاراتیروئیدیسم<br><strong>تشریح:</strong> طبق کلید جزوه گزینه د صحیح است.</p></details>
+        </div>
+
+        <div class="quiz-question">
+            <p><strong>۱۱۲ - خانم ۲۰ ساله با سردرد و سدیم سرم ۱۲۵... علت هایپوناترمی کدام است؟</strong></p>
+            <ol type="a">
+                <li>SIADH</li>
+                <li>هایپوتیروئیدیسم</li>
+                <li>نارسایی آدرنال</li>
+                <li>دیابت بی‌مزه</li>
+            </ol>
+            <details><summary>نمایش پاسخ</summary><p><strong>پاسخ:</strong> الف) SIADH<br><strong>تشریح:</strong> طبق کلید جزوه گزینه الف صحیح است. (طبق متن جزوه صفحه ۴۳، SIADH از علل هایپوناترمی است).</p></details>
+        </div>
+
+        <div class="quiz-question">
+            <p><strong>۱۱۳ - اولین قدم در رویکرد به هایپوناترمی ارزیابی کدام مورد است؟</strong></p>
+            <ol type="a">
+                <li>حجم ECF</li>
+                <li>اسمولاریته ادرار</li>
+                <li>پاسخ به دسموپرسین</li>
+                <li>حجم ادرار ۲۴ ساعته</li>
+            </ol>
+            <details><summary>نمایش پاسخ</summary><p><strong>پاسخ:</strong> ب) اسمولاریته ادرار<br><strong>تشریح:</strong> طبق کلید جزوه گزینه ب صحیح است.</p></details>
+        </div>
+
+        <div class="quiz-question">
+            <p><strong>۱۱۴ - علت ایجاد هایپوکالمی در هایپومنیزیمی کدام است؟</strong></p>
+            <ol type="a">
+                <li>کاهش جذب گوارشی پتاسیم</li>
+                <li>شیفت پتاسیم به داخل سلول</li>
+                <li>افزایش دفع کلیوی پتاسیم</li>
+                <li>افزایش دفع گوارشی پتاسیم</li>
+            </ol>
+            <details><summary>نمایش پاسخ</summary><p><strong>پاسخ:</strong> ج) افزایش دفع کلیوی پتاسیم<br><strong>تشریح:</strong> طبق کلید جزوه گزینه ج صحیح است. (طبق متن جزوه صفحه ۵۳، هایپومنیزیمی از طریق هایپوکالمی می‌تواند سبب آریتمی قلبی شود).</p></details>
+        </div>
+
+        <div class="quiz-question">
+            <p><strong>۱۱۵ - مرد ۳۵ ساله‌ای با فشار خون بالا و نارسایی قلبی تحت درمان با داروهای فورسماید، اسپیرونولاکتون، آملودیپین و لوزارتان است. کدام دارو مصرفی بیمار می‌تواند موجب هایپرکالمی شود؟</strong></p>
+            <ol type="a">
+                <li>فورسماید</li>
+                <li>اسپیرونولاکتون</li>
+                <li>آملودیپین</li>
+                <li>لوزارتان</li>
+            </ol>
+            <details><summary>نمایش پاسخ</summary><p><strong>پاسخ:</strong> ب) اسپیرونولاکتون<br><strong>تشریح:</strong> طبق کلید جزوه گزینه ب صحیح است. (اسپیرونولاکتون آنتاگونیست آلدوسترون است و باعث افزایش پتاسیم می‌شود).</p></details>
+        </div>
+
+        <div class="quiz-question">
+            <p><strong>۱۱۶ - خانم ۵۴ ساله‌ای با سابقه دیابت و پرفشاری خون... کراتینین سرم ۲/۲ mg/dL و پتاسیم سرم ۵/۸ mEq/dL است. برای کنترل فشار خون وی تجویز تمام داروهای داده شده مجاز است به جز:</strong></p>
+            <ol type="a">
+                <li>متوپرولول</li>
+                <li>پروزوسین</li>
+                <li>آملودیپین</li>
+                <li>اسپیرونولاکتون</li>
+            </ol>
+            <details><summary>نمایش پاسخ</summary><p><strong>پاسخ:</strong> الف) متوپرولول<br><strong>تشریح:</strong> طبق کلید جزوه گزینه الف صحیح است. (اسپیرونولاکتون در بیمار با پتاسیم بالا و نارسایی کلیه ممنوع است، اما کلید گزینه الف را صحیح می‌داند).</p></details>
+        </div>
+
+        <div class="quiz-question">
+            <p><strong>۱۱۷ - مرد ۵۰ ساله‌ای مبتلا به دیابت با کاهش حجم ادرار و فشارخون ۱۳۰/۸۰ mmHg بستری شده است. در آزمایشات: BUN 30 mg/dL، کراتینین سرم 3.0 mg/dL، پتاسیم سرم 6.5 mEq/dL است. در نوار قلب پهن شدن موج QRS مشهود است. کدام اقدام درمانی زیر در کاهش غلظت سرمی پتاسیم موثر نیست؟</strong></p>
+            <ol type="a">
+                <li>گلوکونات کلسیم</li>
+                <li>انسولین + گلوکز</li>
+                <li>بتا ۲ آگونیست</li>
+                <li>پلی‌استایرن سولفونات سدیم</li>
+            </ol>
+            <details><summary>نمایش پاسخ</summary><p><strong>پاسخ:</strong> ب) انسولین + گلوکز<br><strong>تشریح:</strong> طبق کلید جزوه گزینه ب صحیح است. (گلوکونات کلسیم در کاهش پتاسیم سرم موثر نیست و فقط اثر محافظتی بر قلب دارد، اما کلید جزوه گزینه ب را صحیح می‌داند).</p></details>
+        </div>
+
+        <div class="quiz-question">
+            <p><strong>۱۱۸ - بیماری در بخش داخلی بستری است. در آزمایشات: pH=7.34, HCO3=14, pCO2=19, Na=140, K=4, Cl=106. کدام تشخیص برای بیمار مطرح است؟</strong></p>
+            <ol type="a">
+                <li>اسیدوز متابولیک با شکاف آنیونی بالا همراه با الکالوز تنفسی</li>
+                <li>اسیدوز متابولیک با شکاف آنیونی طبیعی همراه با الکالوز تنفسی</li>
+                <li>اسیدوز متابولیک با شکاف آنیونی بالا همراه با اسیدوز تنفسی</li>
+                <li>اسیدوز متابولیک با شکاف آنیونی طبیعی همراه با اسیدوز تنفسی</li>
+            </ol>
+            <details><summary>نمایش پاسخ</summary><p><strong>پاسخ:</strong> ب) اسیدوز متابولیک با شکاف آنیونی طبیعی همراه با الکالوز تنفسی<br><strong>تشریح:</strong> طبق کلید جزوه گزینه ب صحیح است.</p></details>
+        </div>
+
+        <div class="quiz-question">
+            <p><strong>۱۱۹ - در بیماری مبتلا به سیروز کبدی و تحت درمان با آلدکتون نتایج آزمایشات به این صورت است: pH=7.55, HCO3=33, pCO2=38, Na=110, K=4, Cl=91. کدام تشخیص برای بیمار مطرح است؟</strong></p>
+            <ol type="a">
+                <li>اسیدوز متابولیک با شکاف آنیونی بالا همراه با الکالوز تنفسی</li>
+                <li>اسیدوز متابولیک با شکاف آنیونی بالا همراه با الکالوز متابولیک</li>
+                <li>الکالوز متابولیک همراه با اسیدوز تنفسی</li>
+                <li>الکالوز متابولیک همراه با الکالوز تنفسی</li>
+            </ol>
+            <details><summary>نمایش پاسخ</summary><p><strong>پاسخ:</strong> ج) الکالوز متابولیک همراه با اسیدوز تنفسی<br><strong>تشریح:</strong> طبق کلید جزوه گزینه ج صحیح است.</p></details>
+        </div>
+
+        <div class="quiz-question">
+            <p><strong>۱۲۰ - مرد ۴۰ ساله‌ای با سابقه دیابت و نارسایی مزمن کلیه با شکایت استفراغ از چند روز قبل مراجعه کرده است. در معاینه فیزیکی علائم حیاتی طبیعی است. در ABG انجام شده چه نوع اختلال اسید و بازی مشاهده می‌شود؟</strong></p>
+            <ol type="a">
+                <li>الکالوز متابولیک همراه با اسیدوز تنفسی</li>
+                <li>اسیدوز متابولیک همراه با اسیدوز تنفسی</li>
+                <li>اسیدوز متابولیک همراه با الکالوز تنفسی</li>
+                <li>اسیدوز متابولیک همراه با الکالوز متابولیک</li>
+            </ol>
+            <details><summary>نمایش پاسخ</summary><p><strong>پاسخ:</strong> ب) اسیدوز متابولیک همراه با اسیدوز تنفسی<br><strong>تشریح:</strong> طبق کلید جزوه گزینه ب صحیح است.</p></details>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <p>کاری از تیم آموزشی بهشتینو | برای دریافت خلاصه سایر مباحث به کانال بهشتینو بپیوندید</p>
+        <p>Beheshtino © 1405</p>
+    </div>
+
+</div>
+
+</body>
+</html>
